@@ -432,7 +432,7 @@ export default function LandingPage() {
             ].map((feat, idx) => (
               <div key={idx} className="w-[280px] sm:w-[320px] shrink-0 h-full">
               <CardTilt className="h-full">
-                <div className="bg-white border border-neutral-200 p-6 rounded-xl h-full flex flex-col justify-between hover:border-primary transition-all shadow-sm">
+                <div className="bg-white border border-neutral-200 p-6 rounded-xl h-full min-h-[180px] flex flex-col justify-between hover:border-primary transition-all shadow-sm">
                   <div>
                     <div className="p-3 bg-primary/10 text-primary rounded-lg w-fit mb-4">
                       <feat.icon className="h-5 w-5" />
