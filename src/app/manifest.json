@@ -1,0 +1,16 @@
+{
+  "name": "360payZ Payment Platform",
+  "short_name": "360payZ",
+  "description": "Transfer funds from credit cards to vendor accounts instantly.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#A3FF12",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
