@@ -18,7 +18,7 @@ export default function GlobalLayoutWrapper({ children }: { children: React.Reac
   return (
     <>
       <Navbar />
-      <main className="relative z-10 pt-20 min-h-screen">
+      <main className="relative z-10 pt-24 min-h-screen">
         {children}
       </main>
     </>

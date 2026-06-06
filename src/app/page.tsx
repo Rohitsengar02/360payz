@@ -132,13 +132,13 @@ export default function LandingPage() {
       <GridBg />
 
       {/* SECTION 1: PREMIUM ANNOUNCEMENT BAR */}
-      <div className="w-full bg-neutral-900 text-white py-2 px-4 text-center overflow-hidden">
-        <div className="inline-flex items-center gap-2 text-xs md:text-sm">
+      <div className="w-full bg-primary/5 border-b border-primary/10 text-neutral-800 py-3 px-4 text-center overflow-hidden">
+        <div className="inline-flex flex-wrap justify-center items-center gap-2 text-xs md:text-sm">
           <span className="bg-primary/20 text-primary text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">
             Launching Soon
           </span>
-          <span className="text-white/80">Early Access Open for Verified Users.</span>
-          <a href="https://360payz.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold inline-flex items-center gap-0.5">
+          <span className="font-medium">Early Access Open for Verified Users.</span>
+          <a href="https://360payz.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 hover:underline font-bold inline-flex items-center gap-0.5 ml-1">
             Join Waitlist <ArrowRight className="h-3 w-3" />
           </a>
         </div>
