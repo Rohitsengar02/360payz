@@ -736,7 +736,7 @@ export default function LandingPage() {
             Take advantage of interest-free credit card periods, reward cashbacks, and lightning-fast settlements today.
           </p>
           <div className="flex justify-center gap-4 pt-4">
-            <Link href="/get-started" className="bg-primary text-white font-bold text-xs px-8 py-3.5 rounded-full hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
+            <Link href="https://360payz.netlify.app/" target="_blank" rel="noopener noreferrer" className="bg-primary text-white font-bold text-xs px-8 py-3.5 rounded-full hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
               Get Started
             </Link>
 
