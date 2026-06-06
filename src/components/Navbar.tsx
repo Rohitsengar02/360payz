@@ -14,12 +14,9 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 20);
     };
+    handleScroll(); // Check on mount (handles page reload at scrolled position)
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -41,8 +38,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? "bg-white/80 backdrop-blur-md border-b border-neutral-200 py-4 shadow-sm"
-          : "bg-transparent py-6"
+          ? "bg-white/90 backdrop-blur-md border-b border-neutral-200 py-4 shadow-sm"
+          : "bg-white/70 backdrop-blur-sm py-6"
       }`}
     >
       <div className="w-full px-6 md:px-12 lg:px-16 flex items-center justify-between">
