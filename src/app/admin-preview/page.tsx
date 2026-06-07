@@ -251,7 +251,7 @@ export default function AdminPreviewPage() {
         {activeSubTab === "fraud" && (
           <div className="space-y-6">
             <div>
-              <h1 className="text-2xl font-extrabold text-neutral-900">360 PayZ Fraud Alerts</h1>
+              <h1 className="text-2xl font-extrabold text-neutral-900">360payZ Fraud Alerts</h1>
               <p className="text-xs text-neutral-500 mt-1">Real-time indicators flagged by security algorithms</p>
             </div>
 

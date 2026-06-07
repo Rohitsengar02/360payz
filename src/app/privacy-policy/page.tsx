@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc pl-5 space-y-1">
               <li>Full Name</li>
               <li>Mobile Number</li>
-              <li>Email Address</li>
+              <li>WhatsApp Number</li>
               <li>Aadhaar Information</li>
               <li>PAN Information</li>
               <li>Credit Card Information (securely processed)</li>
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
 
             <h3 className="text-sm font-bold text-neutral-900 uppercase tracking-wider">Contact</h3>
             <p>
-              Email: <a href="mailto:support@360payz.com" className="text-primary hover:underline">support@360payz.com</a>
+              WhatsApp: <a href="https://wa.me/919876543210" className="text-primary hover:underline">+91 98765 43210</a>
             </p>
             <p>By using our platform, you agree to this Privacy Policy.</p>
           </div>

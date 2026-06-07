@@ -21,12 +21,7 @@ import GridBg from "@/components/UI/GridBg";
 import Footer from "@/components/Footer";
 
 const FEATURE_LIST = [
-  {
-    icon: Smartphone,
-    title: "Mobile OTP Security",
-    detail: "Every transaction is initiated with an encrypted 2FA challenge via SMS. Our system binds to your SIM card to protect you against interception and spoofing.",
-    badge: "2FA"
-  },
+
 
   {
     icon: UserCheck,
@@ -37,20 +32,20 @@ const FEATURE_LIST = [
   {
     icon: Send,
     title: "Direct Vendor Settlements",
-    detail: "Avoid wire delays. Transfer credit card balances directly into any Indian business bank account using IMPS, RTGS, and NEFT payment routing networks.",
-    badge: "IMPS/NEFT"
+    detail: "Avoid wire delays. Transfer credit card balances directly into any Indian business bank account using different settlement options.",
+    badge: "Bank Transfer"
   },
   {
     icon: Zap,
     title: "Cashback Wallet Integration",
-    detail: "Earn a cashback on every single vendor payout. Reinvest the accrued cashback to offset transaction fees or withdraw directly to your bank account.",
+    detail: "Earn cashback on vendor payments.",
     badge: "Cashback"
   },
 
   {
     icon: Bell,
     title: "Real-time Push Alerts",
-    detail: "Stay informed on every stage of your transfer. Receive WhatsApp and SMS notifications the second funds leave your card and arrive in the vendor's account.",
+    detail: "Stay informed on every stage of your transfer. Receive WhatsApp notifications and dedicated help & support the second funds leave your card.",
     badge: "Push Notifications"
   },
   {
@@ -102,61 +97,7 @@ export default function FeaturesPage() {
           ))}
         </div>
 
-        {/* Feature Stats / Deep Dive */}
-        <div className="bg-neutral-50 border border-neutral-200 rounded-3xl p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-sm">
-          <div className="lg:col-span-6 space-y-6">
-            <h3 className="text-2xl font-bold text-neutral-900">Transaction Safety Measures</h3>
-            <p className="text-sm text-neutral-600 leading-relaxed">
-              Every payout processed by 360payZ goes through multi-layered safety gates designed to protect funds and identities.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <Lock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <h4 className="text-xs font-bold text-neutral-900">End-to-End Encryption</h4>
-                  <p className="text-[11px] text-neutral-500">All payment details are tokenized and processed over secure SSL connections.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <RefreshCw className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                <div>
-                  <h4 className="text-xs font-bold text-neutral-900">Automatic Retry Protocol</h4>
-                  <p className="text-[11px] text-neutral-500">If an IMPS transaction fails, the funds are instantly rolled back to your card limit.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <UserPlus className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <h4 className="text-xs font-bold text-neutral-900">Beneficiary Penny Drop Check</h4>
-                  <p className="text-[11px] text-neutral-500">We instantly deposit ₹1 in the vendor's account to verify their name before sending your funds.</p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div className="lg:col-span-6">
-            <div className="border border-neutral-200 rounded-2xl p-6 bg-white/70 space-y-4 relative shadow-inner">
-              <div className="flex items-center gap-2 text-xs font-bold text-neutral-900 pb-3 border-b border-neutral-200">
-                <ShieldCheck className="h-4 w-4 text-primary" />
-                Compliance Framework
-              </div>
-              <div className="space-y-2 text-xs">
-                <div className="flex justify-between text-neutral-600">
-                  <span>PCI-DSS Compliance:</span>
-                  <span className="text-neutral-900 font-semibold">Certified v4.0</span>
-                </div>
-                <div className="flex justify-between text-neutral-600">
-                  <span>Data Residency:</span>
-                  <span className="text-neutral-900 font-semibold">Hosted within India</span>
-                </div>
-                <div className="flex justify-between text-neutral-600">
-                  <span>Risk Detection:</span>
-                  <span className="text-neutral-900 font-semibold">AI Real-time Engine</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
       <Footer />

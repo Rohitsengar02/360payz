@@ -15,16 +15,17 @@ export default function PricingPage() {
       desc: "For small businesses & freelance professionals",
       features: [
         "Up to ₹2,00,000 monthly volume",
-        "Instant IMPS settlements",
+        "Instant settlements",
         "Standard KYC onboarding",
         "Cashback on all transactions",
-        "Email support",
+        "WhatsApp support",
       ],
+      cta: "Get Started",
       popular: false,
     },
     {
       name: "Growth",
-      rate: "1.8%",
+      rate: "1.9%",
       desc: "For growing SMEs & mid-market firms",
       features: [
         "Up to ₹15,00,000 monthly volume",
@@ -34,7 +35,22 @@ export default function PricingPage() {
         "WhatsApp & phone support",
         "Custom API integrations",
       ],
+      cta: "Get Started",
       popular: true,
+    },
+    {
+      name: "Enterprise",
+      rate: "Custom Pricing",
+      desc: "For high-volume businesses and enterprises.",
+      features: [
+        "Dedicated Account Manager",
+        "Custom Transaction Pricing",
+        "Priority Support",
+        "Advanced API Integrations",
+        "SLA Commitment",
+      ],
+      cta: "Talk to Sales",
+      popular: false,
     },
   ];
 
@@ -59,7 +75,7 @@ export default function PricingPage() {
       </div>
 
       {/* Pricing Tiers Grid */}
-      <div className="w-full max-w-4xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+      <div className="w-full max-w-6xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-3 gap-8 mb-24">
         {tiers.map((t, idx) => (
           <div
             key={idx}
@@ -94,14 +110,19 @@ export default function PricingPage() {
                 ))}
               </div>
             </div>
+            
+            <div className="mt-8">
+              <Link href={t.cta === "Talk to Sales" ? "/contact" : "/get-started"} className={`w-full block text-center py-3 rounded-xl text-sm font-bold transition-all ${
+                t.popular 
+                  ? "bg-primary text-neutral-900 hover:opacity-90 shadow-lg shadow-primary/20" 
+                  : "bg-neutral-900 text-white hover:bg-neutral-800 shadow-md"
+              }`}>
+                {t.cta}
+              </Link>
+            </div>
           </div>
         ))}
       </div>
-
-
-
-
-
       <Footer />
     </div>
   );

@@ -24,7 +24,7 @@ const SECURITY_PILLARS = [
   },
   {
     icon: ShieldCheck,
-    title: "360 PayZ Fraud Engine",
+    title: "360payZ Fraud Engine",
     desc: "An AI-powered module that screens transactions in real-time, matching transaction sizes, patterns, and historical risks."
   },
   {
@@ -66,7 +66,7 @@ export default function SecurityPage() {
         <span className="text-xs uppercase font-extrabold text-primary tracking-widest">SECURITY CENTER</span>
         <h1 className="text-4xl md:text-5xl font-extrabold text-neutral-900">Bank-Grade Payout Security</h1>
         <p className="text-sm text-neutral-500 max-w-lg mx-auto">
-          Secured by 360 PayZ and in compliance with RBI guidelines. We prioritize the protection of your finances and identity above all.
+          Secured by 360payZ and in compliance with RBI guidelines. We prioritize the protection of your finances and identity above all.
         </p>
       </div>
 
@@ -94,7 +94,7 @@ export default function SecurityPage() {
           <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full filter blur-3xl" />
           
           <div className="max-w-2xl">
-            <h3 className="text-2xl font-bold text-neutral-900 mb-4">Under the Hood: 360 PayZ</h3>
+            <h3 className="text-2xl font-bold text-neutral-900 mb-4">Under the Hood: 360payZ</h3>
             <p className="text-sm text-neutral-600 leading-relaxed mb-6">
               When a transaction is made on 360payZ, our verification engine runs multiple risk checks. If any parameters fall outside normal ranges, the transaction is immediately locked for multi-factor manual verification.
             </p>

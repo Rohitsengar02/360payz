@@ -46,7 +46,7 @@ export default function PaymentSetupPage() {
   const methods = [
     { id: "credit_card", title: "Credit Card", desc: "Earn rewards and utilize interest-free limits.", icon: CreditCard, badges: ["Instant", "Rewards"] },
     { id: "debit_card", title: "Debit Card", desc: "Directly debit from your linked bank account.", icon: CreditCard, badges: ["Instant"] },
-    { id: "bank_account", title: "Bank Account", desc: "NEFT/RTGS transfers for large volumes.", icon: Landmark, badges: ["No Limit"] },
+    { id: "bank_account", title: "Bank Account", desc: "Bank transfers for large volumes.", icon: Landmark, badges: ["No Limit"] },
     { id: "upi", title: "UPI", desc: "Quick transfers using your UPI ID.", icon: Smartphone, badges: ["Instant", "Zero Fee"] },
   ];
 

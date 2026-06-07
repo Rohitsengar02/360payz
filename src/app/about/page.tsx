@@ -35,10 +35,10 @@ export default function AboutPage() {
           <div className="lg:col-span-6 space-y-6">
             <h2 className="text-2xl md:text-3xl font-bold text-neutral-900">Our Story</h2>
             <p className="text-sm text-neutral-600 leading-relaxed">
-              Founded in 2025, 360payZ was created to address a critical cash flow gap faced by millions of Indian startups and micro-enterprises. While companies had credit cards, paying vendors, wholesalers, and utility providers who only accepted direct bank transfers remained a challenge.
+              Founded in 2026, 360payZ was created to address a critical cash flow gap faced by millions of Indian startups and micro-enterprises. While companies had credit cards, paying vendors, wholesalers, and utility providers who only accepted direct bank transfers remained a challenge.
             </p>
             <p className="text-sm text-neutral-600 leading-relaxed">
-              We designed a secure, 24/7 transaction bridge that utilizes credit card lines and directly credits the recipient's bank account instantly, while maintaining full RBI compliance and offering flat cashbacks.
+              We designed a secure, 24/7 transaction bridge that utilizes credit card limits and directly credits the recipient's bank account instantly, while maintaining full RBI compliance and offering flat cashbacks.
             </p>
           </div>
           <div className="lg:col-span-6">
@@ -85,7 +85,7 @@ export default function AboutPage() {
           <div className="relative border-l border-neutral-200 ml-4 md:ml-8 space-y-12 py-4">
             {[
               { q: "Q1 2026", title: "Platform Launch", desc: "Release of Web portal and instant automated Aadhaar and PAN verification APIs." },
-              { q: "Q2 2026", title: "Mobile Apps (iOS & Android)", desc: "Launching high-fidelity native apps on App Store and Play Store with biometric login." },
+              { q: "Q3 2026", title: "Mobile Apps (iOS & Android)", desc: "Launching high-fidelity native apps on App Store and Play Store with biometric login." },
               { q: "Q3 2026", title: "Automated Tax Filings", desc: "Integrate direct GST, TDS, and advance tax payments using card limits." },
               { q: "Q4 2026", title: "International Vendor Payouts", desc: "Support multi-currency global supplier settlements using local Indian credit cards." }
             ].map((node, i) => (
@@ -108,7 +108,7 @@ export default function AboutPage() {
           <div className="space-y-2">
             <h3 className="text-lg font-bold text-neutral-900 flex items-center gap-2">
               RBI Compliant Operations
-              <span className="bg-primary/10 text-primary text-[9px] font-extrabold px-2 py-0.5 rounded-full">CERTIFIED</span>
+              <span className="bg-primary/10 text-primary text-[9px] font-extrabold px-2 py-0.5 rounded-full">Built to RBI PA Guidelines</span>
             </h3>
             <p className="text-xs text-neutral-600 leading-relaxed">
               360payZ strictly adheres to all regulations set by the Reserve Bank of India for payment aggregators and credit card intermediaries. We employ advanced Escrow accounts with verified banks to ensure your funds are handled securely and disbursed correctly to your vendors.

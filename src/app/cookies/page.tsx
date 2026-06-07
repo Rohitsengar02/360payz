@@ -184,7 +184,7 @@ export default function CookiesPage() {
               <p>If you have questions regarding our Cookie Policy, please contact:</p>
               <div className="mt-3">
                 <p className="font-semibold text-neutral-800">360payZ Support Team</p>
-                <p>Email: <a href="mailto:support@360payz.com" className="text-primary font-medium hover:underline">support@360payz.com</a></p>
+                <p>Email: <a href="mailto:contact@360payz.com" className="text-primary font-medium hover:underline">contact@360payz.com</a>, <a href="mailto:Support@360payz.com" className="text-primary font-medium hover:underline">Support@360payz.com</a></p>
               </div>
             </div>
             

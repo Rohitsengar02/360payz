@@ -156,9 +156,9 @@ export default function AppCarousel() {
                     <div className="flex justify-between items-center">
                       <div>
                         <span className="text-[10px] text-white/50">Good morning,</span>
-                        <h5 className="text-sm font-bold text-white leading-none">Vishal</h5>
+                        <h5 className="text-sm font-bold text-white leading-none">Aman</h5>
                       </div>
-                      <div className="h-8 w-8 rounded-full bg-neutral-800 flex items-center justify-center border border-white/10 text-white text-[11px] font-bold">V</div>
+                      <div className="h-8 w-8 rounded-full bg-neutral-800 flex items-center justify-center border border-white/10 text-white text-[11px] font-bold">A</div>
                     </div>
 
                     <div className="bg-gradient-to-tr from-secondary/40 to-black p-4 rounded-2xl border border-white/10 shadow-lg">

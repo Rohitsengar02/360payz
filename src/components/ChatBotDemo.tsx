@@ -20,7 +20,7 @@ const PRESETS = [
 ];
 
 const BOT_RESPONSES: Record<string, string> = {
-  "How do I check the status of my vendor transfer?": "You can view all transaction statuses on your Dashboard under 'Recent Transfers'. A green checkmark indicates a successful payout, which typically reaches the vendor's bank account within 2-5 minutes via IMPS.",
+  "How do I check the status of my vendor transfer?": "You can view all transaction statuses on your Dashboard under 'Recent Transfers'. A green checkmark indicates a successful payout, which typically reaches the vendor's bank account within 2-5 minutes using different settlement option.",
   "What documents do I need for Aadhaar and PAN verification?": "You need your Aadhaar Number (linked to your mobile for OTP verification) and a PAN card. Verification is fully automated and takes less than 60 seconds to complete in our app.",
   "How does the cashback work?": "For every vendor payout completed using your connected credit card, we credit a cashback directly into your 360payZ Cashback Wallet instantly. This can be used for future payments or withdrawn.",
   "What is the maximum limit per card transaction?": "The initial transaction limit is up to ₹2,00,000 per day for verified users. This limit can be enhanced by submitting tax returns or business registrations in the settings panel.",
@@ -84,7 +84,7 @@ export default function ChatBotDemo() {
           <span className="text-xs uppercase font-extrabold text-primary tracking-widest">Self-Service AI</span>
           <h3 className="text-2xl font-bold text-neutral-900 mt-1">Instant Support Chatbot</h3>
           <p className="text-sm text-neutral-600 mt-2 leading-relaxed">
-            Ask any question to our AI assistant. Click one of the quick topics below to simulate a conversation.
+            Ask any question to our assistant. Click one of the quick topics below to simulate a conversation.
           </p>
         </div>
         <div className="flex flex-col gap-2">
@@ -115,7 +115,7 @@ export default function ChatBotDemo() {
             </div>
             <div>
               <h4 className="text-sm font-bold text-neutral-900">360payZ Assistant</h4>
-              <span className="text-[10px] text-emerald-600 font-medium">Online • AI Agent</span>
+              <span className="text-[10px] text-emerald-600 font-medium">Online • Our Agent</span>
             </div>
           </div>
           <div className="flex items-center gap-3 text-neutral-400 hover:text-neutral-900 cursor-pointer transition-colors">

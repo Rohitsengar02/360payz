@@ -60,7 +60,7 @@ export default function OTPVerifyPage() {
           </div>
           <h2 className="text-2xl font-extrabold text-white">Enter Security Code</h2>
           <p className="text-xs text-white/50 mt-2">
-            A 6-digit verification code has been sent to your registered mobile number and email.
+            A 6-digit verification code has been sent to your registered WhatsApp number.
           </p>
         </div>
 

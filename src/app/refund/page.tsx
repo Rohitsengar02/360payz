@@ -92,16 +92,12 @@ export default function RefundPage() {
                 <table className="w-full text-left min-w-[400px]">
                   <tbody className="divide-y divide-neutral-200">
                     <tr className="bg-neutral-50 hover:bg-neutral-100 transition-colors">
-                      <td className="px-4 py-3 font-semibold text-neutral-900 w-1/2">IMPS Transactions</td>
+                      <td className="px-4 py-3 font-semibold text-neutral-900 w-1/2">Transactions using different settlement option</td>
                       <td className="px-4 py-3">Within 24 Hours</td>
                     </tr>
                     <tr className="hover:bg-neutral-50 transition-colors">
                       <td className="px-4 py-3 font-semibold text-neutral-900">UPI Transactions</td>
                       <td className="px-4 py-3">Within 24 Hours</td>
-                    </tr>
-                    <tr className="bg-neutral-50 hover:bg-neutral-100 transition-colors">
-                      <td className="px-4 py-3 font-semibold text-neutral-900">NEFT Transactions</td>
-                      <td className="px-4 py-3">Within 72 Hours</td>
                     </tr>
                     <tr className="hover:bg-neutral-50 transition-colors">
                       <td className="px-4 py-3 font-semibold text-neutral-900">Banking Delays</td>
@@ -120,8 +116,8 @@ export default function RefundPage() {
               <h3 className="text-base md:text-lg font-bold text-neutral-900 uppercase tracking-wider mb-3">Refund Notifications</h3>
               <p>Users will receive updates through:</p>
               <ul className="list-disc pl-6 space-y-2 mt-3 mb-3">
-                <li>Email Notifications</li>
-                <li>SMS Alerts</li>
+                <li>WhatsApp Notifications</li>
+                <li>WhatsApp Alerts</li>
                 <li>In-App Notifications</li>
               </ul>
               <p className="mt-3">
@@ -167,7 +163,7 @@ export default function RefundPage() {
                 <li>Relevant Supporting Details</li>
               </ul>
               <div className="mt-3">
-                <p>Support Email: <a href="mailto:support@360payz.com" className="text-primary font-medium hover:underline">support@360payz.com</a></p>
+                <p>Support WhatsApp: <a href="https://wa.me/919876543210" className="text-primary font-medium hover:underline">+91 98765 43210</a></p>
               </div>
             </div>
             

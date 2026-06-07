@@ -20,7 +20,7 @@ export default function FlowVisualizer() {
     },
     {
       title: "Fraud Check",
-      desc: "360 PayZ AI analyzes risk markers",
+      desc: "360payZ AI analyzes risk markers",
       icon: ShieldAlert,
       color: "from-red-500 to-pink-500",
     },
@@ -31,8 +31,8 @@ export default function FlowVisualizer() {
       color: "from-amber-500 to-orange-500",
     },
     {
-      title: "Settlement",
-      desc: "Funds settled via IMPS/NEFT/RTGS rails",
+      title: "Bank Settlement",
+      desc: "Funds settled using different settlement option.",
       icon: CheckSquare,
       color: "from-green-500 to-teal-500",
     },

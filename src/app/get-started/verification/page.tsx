@@ -45,7 +45,7 @@ export default function VerificationPage() {
   };
 
   const handleContinue = () => {
-    if (state.mobileVerified && state.emailVerified) {
+    if (state.mobileVerified) {
       setIsLoading(true);
       setTimeout(() => {
         setIsLoading(false);
@@ -68,7 +68,7 @@ export default function VerificationPage() {
         <div className="flex items-center justify-between border-b border-neutral-100 pb-4">
           <div className="flex items-center gap-3">
             <Smartphone className="w-5 h-5 text-neutral-400" />
-            <span className="text-sm font-semibold text-neutral-900">Mobile Verification</span>
+            <span className="text-sm font-semibold text-neutral-900">WhatsApp Verification</span>
           </div>
           {state.mobileVerified ? (
             <span className="bg-emerald-100 text-emerald-700 text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1">
@@ -81,21 +81,6 @@ export default function VerificationPage() {
           )}
         </div>
         
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Mail className="w-5 h-5 text-neutral-400" />
-            <span className="text-sm font-semibold text-neutral-900">Email Verification</span>
-          </div>
-          {state.emailVerified ? (
-            <span className="bg-emerald-100 text-emerald-700 text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3" /> VERIFIED
-            </span>
-          ) : (
-            <span className="bg-neutral-100 text-neutral-500 text-[10px] font-bold px-2 py-1 rounded-full">
-              PENDING
-            </span>
-          )}
-        </div>
       </div>
     </div>
   );
@@ -113,7 +98,7 @@ export default function VerificationPage() {
           <div className="flex justify-between items-start mb-4">
             <div>
               <h3 className="font-bold text-neutral-900 flex items-center gap-2">
-                Mobile OTP Verification 
+                WhatsApp OTP Verification 
                 {state.mobileVerified && <CheckCircle2 className="w-4 h-4 text-emerald-500" />}
               </h3>
               <p className="text-xs text-neutral-500 mt-1">
@@ -161,62 +146,10 @@ export default function VerificationPage() {
           )}
         </div>
 
-        {/* Email Verification */}
-        <div className={`p-6 rounded-2xl border transition-all ${state.emailVerified ? "bg-emerald-50/50 border-emerald-200" : "bg-white border-neutral-200 shadow-sm"}`}>
-          <div className="flex justify-between items-start mb-4">
-            <div>
-              <h3 className="font-bold text-neutral-900 flex items-center gap-2">
-                Email Verification
-                {state.emailVerified && <CheckCircle2 className="w-4 h-4 text-emerald-500" />}
-              </h3>
-              <p className="text-xs text-neutral-500 mt-1">
-                Sent to {state.email || "you@company.com"}
-              </p>
-            </div>
-            {!state.emailVerified && (
-              <button onClick={() => router.back()} className="text-[10px] font-bold text-primary hover:underline uppercase">Change Email</button>
-            )}
-          </div>
-
-          {!state.emailVerified ? (
-            <div className="flex gap-3">
-              <input 
-                type="text" 
-                maxLength={6}
-                value={emailOtp}
-                onChange={(e) => setEmailOtp(e.target.value.replace(/\D/g, ""))}
-                placeholder="6 Digit Code"
-                className="flex-1 bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-center tracking-widest font-bold"
-              />
-              <button 
-                onClick={verifyEmail}
-                disabled={emailOtp.length !== 6}
-                className="bg-neutral-900 text-white font-bold px-6 rounded-xl hover:bg-black transition-colors disabled:opacity-50 text-sm"
-              >
-                Verify
-              </button>
-            </div>
-          ) : (
-            <div className="bg-emerald-100 text-emerald-700 text-sm font-bold p-3 rounded-xl flex items-center justify-center gap-2">
-              <CheckCircle2 className="w-4 h-4" /> Email Successfully Verified
-            </div>
-          )}
-
-          {!state.emailVerified && (
-            <div className="mt-3 text-xs text-neutral-500 flex justify-between">
-              <span>Didn't receive code?</span>
-              {emailTimer > 0 ? (
-                <span className="font-semibold">Resend in 00:{emailTimer.toString().padStart(2, "0")}</span>
-              ) : (
-                <button onClick={() => setEmailTimer(60)} className="font-bold text-primary hover:underline">Resend Code</button>
-              )}
-            </div>
-          )}
-        </div>
 
         <button 
           onClick={handleContinue}
-          disabled={!state.mobileVerified || !state.emailVerified || isLoading}
+          disabled={!state.mobileVerified || isLoading}
           className="w-full bg-primary text-white font-bold py-4 rounded-xl mt-6 hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : "Continue to KYC"}

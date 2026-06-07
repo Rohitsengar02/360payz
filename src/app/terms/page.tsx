@@ -239,7 +239,7 @@ export default function TermsPage() {
               <p>For questions regarding these Terms of Use, please contact:</p>
               <div className="mt-3">
                 <p className="font-semibold text-neutral-800">360payZ Support Team</p>
-                <p>Email: <a href="mailto:support@360payz.com" className="text-primary font-medium hover:underline">support@360payz.com</a></p>
+                <p>WhatsApp: <a href="https://wa.me/919876543210" className="text-primary font-medium hover:underline">+91 98765 43210</a></p>
               </div>
             </div>
           </div>

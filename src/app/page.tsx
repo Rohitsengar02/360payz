@@ -24,20 +24,17 @@ import GridBg from "@/components/UI/GridBg";
 import CardTilt from "@/components/UI/CardTilt";
 import DashboardDemo from "@/components/DashboardDemo";
 import FlowVisualizer from "@/components/FlowVisualizer";
-import ChatBotDemo from "@/components/ChatBotDemo";
+
 import AppCarousel from "@/components/AppCarousel";
 import Logo from "@/components/Logo";
 import { Accordion } from "@/components/UI/Accordion";
 import Footer from "@/components/Footer";
 
 const FAQ_ITEMS = [
-  {
-    question: "Is it legal to transfer money from credit card to vendor bank accounts in India?",
-    answer: "Yes, it is entirely legal and compliant. 360payZ complies with all Reserve Bank of India (RBI) directives, including PSS Act regulations. We facilitate transactions for genuine business expenses (vendor payments, supplier invoices, rent, utility bills). We conduct mandatory KYC and PAN verification to prevent cash cash-outs and money laundering."
-  },
+ 
   {
     question: "How long does it take for the vendor to receive the funds?",
-    answer: "Most transactions are settled instantly. For normal working hours, transfers are processed via IMPS/NEFT/RTGS rails within 2 to 5 minutes. You and your vendor will receive real-time notifications once the payout is credited."
+    answer: "Most transactions are settled instantly. For normal working hours, transfers are processed using different settlement option within 2 to 5 minutes. You and your vendor will receive real-time notifications once the payout is credited."
   },
   {
     question: "What credit cards are supported?",
@@ -48,8 +45,8 @@ const FAQ_ITEMS = [
     answer: "We charge a nominal transaction processing fee starting from 1.2% up to 1.8% based on your transacted volume and card type. There are no hidden setup fees, annual charges, or subscription costs."
   },
   {
-    question: "What is the 360 PayZ Fraud Detection system?",
-    answer: "360 PayZ is our proprietary security engine. It runs active fraud scans including device fingerprinting, IP location monitoring, transaction velocity checking, and cardholder matching with beneficiary names to prevent unauthorized or high-risk transactions."
+    question: "What is the 360payZ Fraud Detection system?",
+    answer: "360payZ is our proprietary security engine. It runs active fraud scans including device fingerprinting, IP location monitoring, transaction velocity checking, and cardholder matching with beneficiary names to prevent unauthorized or high-risk transactions."
   },
   {
     question: "How do I claim my cashback?",
@@ -57,35 +54,7 @@ const FAQ_ITEMS = [
   }
 ];
 
-const BLOG_ARTICLES = [
-  {
-    tag: "Security",
-    title: "Understanding PCI-DSS Compliance in Modern Digital Payouts",
-    desc: "How tokenization and encryption secure your card credentials during credit card-to-bank settlements.",
-    author: "Rohan Sen",
-    date: "May 28, 2026",
-    readTime: "5 min read",
-    imgLetter: "R"
-  },
-  {
-    tag: "Compliance",
-    title: "RBI Guidelines on Digital Lending and Card Payments",
-    desc: "A comprehensive guide to staying compliant while using credit instruments for business payments.",
-    author: "Neha Sharma",
-    date: "May 20, 2026",
-    readTime: "8 min read",
-    imgLetter: "N"
-  },
-  {
-    tag: "Strategy",
-    title: "Optimizing Working Capital with Credit Card Payouts",
-    desc: "How smart businesses leverage 45-day interest-free card cycles to bridge vendor payment gaps.",
-    author: "Amit Patel",
-    date: "May 12, 2026",
-    readTime: "6 min read",
-    imgLetter: "A"
-  }
-];
+
 
 
 
@@ -93,17 +62,7 @@ export default function LandingPage() {
   const [waitlistSubmitted, setWaitlistSubmitted] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", company: "" });
   const [feedIndex, setFeedIndex] = useState(0);
-  const [newsletterEmail, setNewsletterEmail] = useState("");
-  const [newsletterSubmitted, setNewsletterSubmitted] = useState(false);
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (newsletterEmail) {
-      setNewsletterSubmitted(true);
-      setNewsletterEmail("");
-      setTimeout(() => setNewsletterSubmitted(false), 3000);
-    }
-  };
 
   
   // Live Feed Data
@@ -168,12 +127,20 @@ export default function LandingPage() {
               Secure, compliant, and available 24/7. Settle vendor invoices, rent, and utility bills. Built for businesses and verified users across India.
             </p>
 
+            <div className="bg-primary/10 border-l-4 border-primary p-4 rounded-r-xl max-w-lg shadow-sm">
+              <p className="text-[10px] font-bold text-primary uppercase tracking-widest mb-1">Problem Statement</p>
+              <p className="text-base font-semibold text-neutral-900">
+                Your vendor doesn't accept Credit Cards? <br className="hidden sm:block" />
+                <span className="text-primary font-bold">We are here to help you out!</span>
+              </p>
+            </div>
+
             <div className="flex flex-wrap gap-4">
               <Link 
                 href="/get-started"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-bold bg-primary text-white hover:bg-black hover:shadow-xl transition-all duration-300"
               >
-                Get Started
+                Join Waitlist
                 <ArrowUpRight className="ml-1.5 h-4 w-4" />
               </Link>
 
@@ -195,7 +162,7 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="lg:col-span-6 relative flex justify-center items-center min-h-[450px] w-full">
+          <div className="lg:col-span-6 relative flex flex-col justify-center items-center min-h-[450px] w-full">
             {/* Background Glow Orb */}
             <div className="absolute w-[350px] h-[350px] bg-primary/10 rounded-full filter blur-3xl -z-10" />
 
@@ -209,7 +176,7 @@ export default function LandingPage() {
                 <div className="p-4 pt-8 flex-1 bg-neutral-950 flex flex-col justify-between">
                   <div>
                     <div className="flex justify-between items-center text-[9px] text-white/40 mb-3">
-                      <span>360payZ Pro</span>
+                      <span>360payZ</span>
                       <span>9:41 AM</span>
                     </div>
                     <div className="bg-white/5 border border-white/10 rounded-xl p-3">
@@ -218,6 +185,22 @@ export default function LandingPage() {
                         <Zap className="h-3.5 w-3.5 fill-secondary/20" />
                         ₹8,450.00
                       </span>
+                    </div>
+
+                    {/* Virtual Credit Card inside Phone */}
+                    <div className="mt-6 bg-gradient-to-tr from-primary to-violet-600 rounded-xl p-4 shadow-xl border border-white/15 text-white flex flex-col justify-between h-[120px]">
+                      <div className="flex justify-between items-start">
+                        <span className="text-[10px] font-bold tracking-wider">BUSINESS PLATINUM</span>
+                        <span className="text-sm">💳</span>
+                      </div>
+                      <div className="mt-2">
+                        <span className="text-[8px] text-white/60 block font-mono tracking-wider">CARD NUMBER</span>
+                        <span className="text-xs font-mono tracking-widest mt-0.5 block">•••• •••• 9820</span>
+                      </div>
+                      <div className="flex justify-between items-center text-[9px] text-white/80 mt-auto pt-2">
+                        <span className="uppercase">Aman Sen</span>
+                        <span>08/29</span>
+                      </div>
                     </div>
                   </div>
                   {/* Simulated Chart */}
@@ -236,7 +219,7 @@ export default function LandingPage() {
               <motion.div 
                 animate={{ y: [0, -15, 0] }}
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-                className="absolute right-2 top-10 w-[150px] h-[95px] sm:right-4 sm:w-[180px] sm:h-[110px] lg:-right-2 lg:w-[200px] lg:h-[120px] bg-gradient-to-tr from-primary to-violet-600 rounded-2xl p-3 sm:p-4 shadow-xl border border-white/15 z-30 text-white flex flex-col justify-between"
+                className="flex absolute -right-2 top-[320px] w-[130px] h-[85px] sm:right-0 sm:top-[300px] sm:w-[150px] sm:h-[95px] lg:-right-12 xl:-right-6 lg:top-10 z-30 flex-col justify-between bg-gradient-to-tr from-primary to-violet-600 rounded-2xl p-3 sm:p-4 shadow-xl border border-white/15 text-white lg:w-[200px] lg:h-[120px]"
               >
                 <div className="flex justify-between items-start">
                   <span className="text-[8px] sm:text-[10px] font-bold">BUSINESS PLATINUM</span>
@@ -247,16 +230,34 @@ export default function LandingPage() {
                   <span className="text-[10px] sm:text-xs font-mono tracking-wider">•••• •••• 9820</span>
                 </div>
                 <div className="flex justify-between items-center text-[7px] sm:text-[9px] text-white/70">
-                  <span>VISHAL SEN</span>
+                  <span>AMAN SEN</span>
                   <span>08/29</span>
                 </div>
               </motion.div>
+
+              {/* Static Coming Soon Buttons */}
+              <div className="hidden lg:flex absolute -right-12 xl:-right-6 top-[220px] z-30 flex-col gap-4 items-end">
+                <div className="flex items-center gap-2 bg-neutral-950/90 backdrop-blur-md text-white px-4 py-3 rounded-xl border border-white/10 shadow-xl cursor-not-allowed w-[150px]">
+                  <Smartphone className="h-4 w-4 text-white/70 flex-shrink-0" />
+                  <div className="text-left">
+                    <span className="text-[7px] text-white/50 block uppercase tracking-wide leading-none mb-0.5">Coming soon to</span>
+                    <span className="text-[11px] font-bold block leading-none">App Store</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 bg-neutral-950/90 backdrop-blur-md text-white px-4 py-3 rounded-xl border border-white/10 shadow-xl cursor-not-allowed w-[150px]">
+                  <Smartphone className="h-4 w-4 text-white/70 flex-shrink-0" />
+                  <div className="text-left">
+                    <span className="text-[7px] text-white/50 block uppercase tracking-wide leading-none mb-0.5">Coming soon to</span>
+                    <span className="text-[11px] font-bold block leading-none">Google Play</span>
+                  </div>
+                </div>
+              </div>
 
               {/* Transfer Success Card */}
               <motion.div
                 animate={{ y: [0, 12, 0] }}
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-                className="absolute left-2 bottom-16 w-[140px] sm:left-4 sm:w-[160px] lg:-left-6 lg:w-[180px] bg-black/80 backdrop-blur-md border border-white/10 rounded-xl p-2.5 sm:p-3 z-30 flex items-center gap-2 sm:gap-3 shadow-2xl text-white"
+                className="flex absolute -left-2 bottom-6 w-[130px] sm:left-0 sm:bottom-10 sm:w-[150px] lg:-left-6 lg:bottom-16 lg:w-[180px] bg-black/80 backdrop-blur-md border border-white/10 rounded-xl p-2.5 sm:p-3 z-30 items-center gap-2 sm:gap-3 shadow-2xl text-white"
               >
                 <div className="h-7 w-7 sm:h-8 sm:w-8 rounded-full bg-secondary/20 flex items-center justify-center text-secondary flex-shrink-0">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
@@ -268,7 +269,11 @@ export default function LandingPage() {
               </motion.div>
 
               {/* Live Transaction Feed */}
-              <div className="absolute top-4 left-2 w-[140px] sm:left-4 sm:w-[160px] lg:left-0 lg:w-[180px] bg-black/85 backdrop-blur-md border border-white/10 rounded-xl p-2.5 sm:p-3 z-30 shadow-2xl text-white">
+              <motion.div 
+                animate={{ y: [0, -10, 0] }}
+                transition={{ repeat: Infinity, duration: 7, ease: "easeInOut", delay: 0.5 }}
+                className="block absolute -left-4 top-[170px] w-[130px] sm:left-0 sm:top-[150px] sm:w-[150px] lg:left-0 lg:top-4 lg:w-[180px] bg-black/85 backdrop-blur-md border border-white/10 rounded-xl p-2.5 sm:p-3 z-30 shadow-2xl text-white"
+              >
                 <span className="text-[7px] sm:text-[8px] uppercase font-bold text-secondary tracking-widest block mb-1.5">Live Activity</span>
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -285,8 +290,28 @@ export default function LandingPage() {
                     </div>
                   </motion.div>
                 </AnimatePresence>
+              </motion.div>
+
+            </div>
+
+            {/* Mobile Coming Soon Buttons */}
+            <div className="flex lg:hidden flex-row gap-3 mt-12 z-30">
+              <div className="flex items-center gap-2 bg-neutral-950/90 backdrop-blur-md text-white px-4 py-3 rounded-xl border border-white/10 shadow-xl cursor-not-allowed w-[140px]">
+                <Smartphone className="h-4 w-4 text-white/70 flex-shrink-0" />
+                <div className="text-left">
+                  <span className="text-[6px] text-white/50 block uppercase tracking-wide leading-none mb-0.5">Coming soon to</span>
+                  <span className="text-[10px] font-bold block leading-none">App Store</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 bg-neutral-950/90 backdrop-blur-md text-white px-4 py-3 rounded-xl border border-white/10 shadow-xl cursor-not-allowed w-[140px]">
+                <Smartphone className="h-4 w-4 text-white/70 flex-shrink-0" />
+                <div className="text-left">
+                  <span className="text-[6px] text-white/50 block uppercase tracking-wide leading-none mb-0.5">Coming soon to</span>
+                  <span className="text-[10px] font-bold block leading-none">Google Play</span>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -325,10 +350,10 @@ export default function LandingPage() {
         {/* Infinite horizontal marquee */}
         <div className="flex w-[200%] gap-6 animate-marquee-loop text-white text-xs font-semibold whitespace-nowrap hover:[animation-play-state:paused]">
           {[
-            "SSL Protected", "PAN Varification", "Aadhaar Varification", "Fraud Detection", "24/7 Availability", "Instant Transfers",
-            "SSL Protected", "PAN Varification", "Aadhaar Varification", "Fraud Detection", "24/7 Availability", "Instant Transfers",
-            "SSL Protected", "PAN Varification", "Aadhaar Varification", "Fraud Detection", "24/7 Availability", "Instant Transfers",
-            "SSL Protected", "PAN Varification", "Aadhaar Varification", "Fraud Detection", "24/7 Availability", "Instant Transfers"
+            "SSL Protected", "PAN Verification", "Aadhaar Verification", "Fraud Detection", "24/7 Availability", "Instant Transfers",
+            "SSL Protected", "PAN Verification", "Aadhaar Verification", "Fraud Detection", "24/7 Availability", "Instant Transfers",
+            "SSL Protected", "PAN Verification", "Aadhaar Verification", "Fraud Detection", "24/7 Availability", "Instant Transfers",
+            "SSL Protected", "PAN Verification", "Aadhaar Verification", "Fraud Detection", "24/7 Availability", "Instant Transfers"
           ].map((item, idx) => (
             <div key={idx} className="bg-white/5 border border-white/10 px-6 py-3 rounded-full flex items-center gap-2">
               <Check className="h-4 w-4 text-secondary" />
@@ -350,7 +375,7 @@ export default function LandingPage() {
         {/* Full-width Colorful Steps Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 items-stretch w-full">
             {[
-              { step: "01", title: "Registration", desc: "Create your account using your mobile number and email address.", bg: "bg-gradient-to-br from-blue-50 to-blue-100/50 border-blue-200", iconBg: "bg-blue-100 text-blue-700", text: "text-blue-950", bgNum: "text-blue-500/10 group-hover:text-blue-500/20" },
+              { step: "01", title: "Registration", desc: "Create your account using your WhatsApp number.", bg: "bg-gradient-to-br from-blue-50 to-blue-100/50 border-blue-200", iconBg: "bg-blue-100 text-blue-700", text: "text-blue-950", bgNum: "text-blue-500/10 group-hover:text-blue-500/20" },
               { step: "02", title: "Complete KYC", desc: "Verify your identity securely using Aadhaar and PAN details.", bg: "bg-gradient-to-br from-purple-50 to-purple-100/50 border-purple-200", iconBg: "bg-purple-100 text-purple-700", text: "text-purple-950", bgNum: "text-purple-500/10 group-hover:text-purple-500/20" },
               { step: "03", title: "Add Credit Card", desc: "Link your credit card through our secure verification process.", bg: "bg-gradient-to-br from-emerald-50 to-emerald-100/50 border-emerald-200", iconBg: "bg-emerald-100 text-emerald-700", text: "text-emerald-950", bgNum: "text-emerald-500/10 group-hover:text-emerald-500/20" },
               { step: "04", title: "Vendor Payment", desc: "Transfer funds securely to vendor bank accounts and track transactions in real time.", bg: "bg-gradient-to-br from-amber-50 to-amber-100/50 border-amber-200", iconBg: "bg-amber-100 text-amber-700", text: "text-amber-950", bgNum: "text-amber-500/10 group-hover:text-amber-500/20" },
@@ -398,7 +423,7 @@ export default function LandingPage() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-xs uppercase font-bold text-primary tracking-widest">Interactive Portal</span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-neutral-950 mt-2">Test Drive the Platform</h2>
-            <p className="text-sm text-neutral-500 mt-2">Simulate real-time transactions and watch the 360 PayZ verification flow.</p>
+            <p className="text-sm text-neutral-500 mt-2">Simulate real-time transactions and watch the 360payZ verification flow.</p>
           </div>
           <DashboardDemo />
         </div>
@@ -418,16 +443,16 @@ export default function LandingPage() {
             {[
               { icon: Smartphone, title: "Mobile OTP Security", desc: "Dual-factor authentication secure checks for transactions." },
               { icon: UserCheck, title: "InstaKYC Engine", desc: "Automated Aadhaar/PAN validation takes under a minute." },
-              { icon: Send, title: "Instant Vendor Payouts", desc: "Direct-to-bank settlements within 2-5 minutes via IMPS rails." },
+              { icon: Send, title: "Instant Vendor Payouts", desc: "Direct-to-bank settlements within 2-5 minutes using different settlement option." },
               { icon: Zap, title: "Cashback Wallet", desc: "Earn cashback credited to your wallet instantly." },
-              { icon: Bell, title: "Smart Alerts", desc: "Instant SMS, email, and push notification for every settlement status." },
+              { icon: Bell, title: "Smart Alerts", desc: "Instant WhatsApp notifications and dedicated help & support for every settlement status." },
               { icon: FileSpreadsheet, title: "Transaction Reports", desc: "Download automated statements for auditing and taxation." },
               // Duplicate set for seamless looping
               { icon: Smartphone, title: "Mobile OTP Security", desc: "Dual-factor authentication secure checks for transactions." },
               { icon: UserCheck, title: "InstaKYC Engine", desc: "Automated Aadhaar/PAN validation takes under a minute." },
-              { icon: Send, title: "Instant Vendor Payouts", desc: "Direct-to-bank settlements within 2-5 minutes via IMPS rails." },
+              { icon: Send, title: "Instant Vendor Payouts", desc: "Direct-to-bank settlements within 2-5 minutes using different settlement option." },
               { icon: Zap, title: "Cashback Wallet", desc: "Earn cashback credited to your wallet instantly." },
-              { icon: Bell, title: "Smart Alerts", desc: "Instant SMS, email, and push notification for every settlement status." },
+              { icon: Bell, title: "Smart Alerts", desc: "Instant WhatsApp notifications and dedicated help & support for every settlement status." },
               { icon: FileSpreadsheet, title: "Transaction Reports", desc: "Download automated statements for auditing and taxation." }
             ].map((feat, idx) => (
               <div key={idx} className="w-[280px] sm:w-[320px] shrink-0 h-full">
@@ -448,74 +473,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SECTION 8: SECURITY CENTER */}
-      <section className="relative z-10 py-24 bg-neutral-950 text-white border-t border-white/5">
-        <div className="w-full px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-5 space-y-6">
-            <span className="text-xs uppercase font-bold text-secondary tracking-widest">Bank-Grade Compliance</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white">360 PayZ Security Center</h2>
-            <p className="text-sm text-white/50 leading-relaxed">
-              We employ strict, top-tier protection mechanisms designed to prevent fraud, secure financial details, and ensure complete regulatory alignment.
-            </p>
-            
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                "256-bit SSL Encryption",
-                "Device Binding Protection",
-                "IP Address Monitoring",
-                "Real-time Fraud Checks",
-                "Session Expiry Controls",
-                "Card Number Hashing",
-                "PAN-KYC Name Matching",
-                "Built to RBI guidelines"
-              ].map((p, idx) => (
-                <div key={idx} className="flex items-center gap-2">
-                  <div className="h-2 w-2 rounded-full bg-secondary" />
-                  <span className="text-xs text-white/80">{p}</span>
-                </div>
-              ))}
-            </div>
-          </div>
 
-          <div className="lg:col-span-7">
-            {/* Visual Security Dashboard */}
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8 relative overflow-hidden">
-              <div className="flex justify-between items-center pb-4 border-b border-white/5 mb-6">
-                <div>
-                  <span className="text-[10px] font-bold text-secondary uppercase block">System Health</span>
-                  <h4 className="text-lg font-bold text-white mt-0.5">Threat Intel & Status</h4>
-                </div>
-                <div className="bg-green-500/10 text-green-400 text-xs px-2.5 py-1 rounded-full font-semibold border border-green-500/20">
-                  Protected
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                {[
-                  { label: "IP/Device Verification", val: 99, color: "bg-secondary" },
-                  { label: "Card Tokenization (PCI-DSS)", val: 100, color: "bg-secondary" },
-                  { label: "RBI compliance checks", val: 98, color: "bg-secondary" }
-                ].map((stat, i) => (
-                  <div key={i} className="space-y-1">
-                    <div className="flex justify-between text-xs font-semibold">
-                      <span className="text-white/70">{stat.label}</span>
-                      <span className="text-white">{stat.val}%</span>
-                    </div>
-                    <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden">
-                      <div style={{ width: `${stat.val}%` }} className={`h-full ${stat.color}`} />
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-white/50">
-                <span>Active sessions: 1</span>
-                <span>Location: India</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* SECTION 9: WHY 360PAYZ */}
       <section className="relative z-10 py-24 w-full px-6 md:px-12 lg:px-16">
@@ -555,7 +513,7 @@ export default function LandingPage() {
                   { label: "99.9% Uptime", desc: "Maximum transaction stability" },
                   { label: "Instant KYC", desc: "Ready to use in seconds" },
                   { label: "Multi-Card Link", desc: "Add multiple cards seamlessly" },
-                  { label: "24/7 Support", desc: "Available on WhatsApp & email" }
+                  { label: "24/7 Support", desc: "Available on our official WhatsApp Handle" }
                 ].map((box, i) => (
                   <div key={i} className="p-5 rounded-2xl bg-white border border-neutral-200 hover:border-primary transition-all text-center">
                     <span className="text-sm font-bold text-neutral-950 block">{box.label}</span>
@@ -585,70 +543,11 @@ export default function LandingPage() {
         <AppCarousel />
       </section>
 
-      {/* SECTION 13: AI CHATBOT */}
-      <section className="relative z-10 py-24 bg-neutral-50 border-t border-neutral-200">
-        <div className="w-full px-6 md:px-12 lg:px-16">
-          <ChatBotDemo />
-        </div>
-      </section>
 
 
 
-      {/* SECTION 15: BLOG / RESOURCES */}
-      <section id="blog" className="relative z-10 py-24 bg-neutral-50 border-t border-neutral-200">
-        <div className="w-full px-6 md:px-12 lg:px-16">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-            <div>
-              <span className="text-xs uppercase font-bold text-primary tracking-widest">Knowledge Center</span>
-              <h2 className="text-3xl font-extrabold text-neutral-950 mt-1">Latest Industry Insights</h2>
-            </div>
-            <form onSubmit={handleNewsletterSubmit} className="bg-white p-4 rounded-2xl border border-neutral-200 max-w-sm flex gap-2 shadow-sm">
-              <input 
-                type="email" 
-                required
-                value={newsletterEmail}
-                onChange={(e) => setNewsletterEmail(e.target.value)}
-                placeholder="Enter email to subscribe" 
-                className="bg-neutral-50 text-xs px-3 py-2 rounded-lg text-neutral-900 border border-neutral-200 focus:outline-none focus:border-primary w-full"
-              />
-              <button type="submit" className="bg-primary text-white text-xs font-bold px-4 py-2 rounded-lg hover:opacity-90 min-w-[80px]">
-                {newsletterSubmitted ? "Joined!" : "Join"}
-              </button>
-            </form>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {BLOG_ARTICLES.map((art, idx) => (
-              <div key={idx} className="bg-white border border-neutral-200 rounded-3xl overflow-hidden hover:border-primary transition-colors flex flex-col justify-between h-full shadow-sm">
-                <div className="p-6">
-                  <span className="text-[9px] bg-primary/10 text-primary font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                    {art.tag}
-                  </span>
-                  <h3 className="text-base font-bold text-neutral-950 mt-4 mb-2 hover:text-primary transition-colors cursor-pointer">
-                    {art.title}
-                  </h3>
-                  <p className="text-xs text-neutral-500 leading-relaxed mb-4">
-                    {art.desc}
-                  </p>
-                </div>
-                
-                <div className="p-6 pt-0 border-t border-neutral-200 mt-auto flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="h-6 w-6 rounded-full bg-neutral-100 text-neutral-800 flex items-center justify-center font-bold text-[10px] border border-neutral-200">
-                      {art.imgLetter}
-                    </div>
-                    <div>
-                      <span className="text-[10px] text-neutral-800 block">{art.author}</span>
-                      <span className="text-[8px] text-neutral-500 block">{art.date}</span>
-                    </div>
-                  </div>
-                  <span className="text-[10px] text-neutral-500 font-medium">{art.readTime}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* SECTION 16: FAQ ACCORDION */}
       <section id="faq" className="relative z-10 py-24 w-full px-6 md:px-12 lg:px-16">
@@ -737,7 +636,7 @@ export default function LandingPage() {
           </p>
           <div className="flex justify-center gap-4 pt-4">
             <Link href="https://360payz.netlify.app/" target="_blank" rel="noopener noreferrer" className="bg-primary text-white font-bold text-xs px-8 py-3.5 rounded-full hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
-              Get Started
+              Join Waitlist
             </Link>
 
           </div>

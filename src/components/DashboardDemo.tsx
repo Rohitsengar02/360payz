@@ -409,7 +409,7 @@ export default function DashboardDemo() {
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-xs font-bold text-neutral-900 flex items-center gap-1.5">
                     <ShieldCheck className="h-4 w-4 text-primary animate-pulse" />
-                    360 PayZ Verification Engine
+                    360payZ Verification Engine
                   </span>
                   <span className="text-[10px] text-primary bg-primary/10 px-2.5 py-0.5 rounded-full flex items-center gap-1 animate-pulse font-bold">
                     <Loader2 className="h-3 w-3 animate-spin" /> Processing

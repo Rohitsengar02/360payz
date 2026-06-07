@@ -50,7 +50,8 @@ export default function ContactPage() {
           <div className="space-y-4">
             {[
               { icon: MessageSquare, title: "WhatsApp Support", details: "+91 98765 43210", desc: "Average response: under 2 minutes", color: "text-emerald-600" },
-              { icon: Mail, title: "Support Email", details: "support@360payz.com", desc: "Average resolution: 2 hours", color: "text-primary" },
+              { icon: Mail, title: "General Contact", details: "contact@360payz.com", desc: "For general queries & partnerships", color: "text-primary" },
+              { icon: Mail, title: "Support Email", details: "Support@360payz.com", desc: "Average resolution: 2 hours", color: "text-primary" },
               { icon: Phone, title: "Helpline", details: "1800-360-PAYZ", desc: "9 AM - 9 PM, Mon - Sat", color: "text-emerald-800" }
             ].map((c, i) => (
               <div key={i} className="flex gap-4 p-5 rounded-2xl bg-neutral-50 border border-neutral-200 hover:border-neutral-300 transition-all shadow-sm">
@@ -179,7 +180,7 @@ export default function ContactPage() {
 
         <div className="text-center pt-2">
           <p className="text-[11px] uppercase tracking-wider text-neutral-400 font-bold">
-            Backed by <span className="text-neutral-600">360 PAYZ PAYMENT SOLUTIONS PVT. LTD.</span>
+            Backed by <span className="text-neutral-600">360payZ PAYMENT SOLUTIONS PVT. LTD.</span>
           </p>
         </div>
       </div>

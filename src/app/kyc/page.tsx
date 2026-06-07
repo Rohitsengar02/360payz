@@ -54,7 +54,7 @@ export default function KYCPage() {
                   <p className="mt-1">OTP-based verification for account security.</p>
                 </div>
                 <div>
-                  <h4 className="font-bold text-neutral-900">Email Verification</h4>
+                  <h4 className="font-bold text-neutral-900">WhatsApp Verification</h4>
                   <p className="mt-1">Verification of communication channels.</p>
                 </div>
               </div>
@@ -71,8 +71,8 @@ export default function KYCPage() {
                 </div>
                 <div className="relative">
                   <div className="absolute -left-[35px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-white"></div>
-                  <span className="font-bold text-neutral-900 block">Step 2: Email Verification</span>
-                  <p className="mt-1">Verify the registered email address.</p>
+                  <span className="font-bold text-neutral-900 block">Step 2: WhatsApp Verification</span>
+                  <p className="mt-1">Verify your registered WhatsApp number.</p>
                 </div>
                 <div className="relative">
                   <div className="absolute -left-[35px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-white"></div>

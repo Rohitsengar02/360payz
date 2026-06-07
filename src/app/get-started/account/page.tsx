@@ -20,8 +20,8 @@ export default function AccountPage() {
 
   const isFormValid = 
     state.firstName.trim() !== "" &&
+    state.firstName.trim() !== "" &&
     state.lastName.trim() !== "" &&
-    state.email.trim() !== "" &&
     state.phone.trim() !== "" &&
     password !== "" &&
     confirmPassword !== "" &&
@@ -142,18 +142,7 @@ export default function AccountPage() {
         </div>
 
         <div>
-          <label className="block text-xs font-bold text-neutral-700 uppercase tracking-wide mb-1.5">Email Address</label>
-          <input 
-            type="email" required 
-            value={state.email}
-            onChange={e => updateState({ email: e.target.value })}
-            className="w-full bg-white border border-neutral-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm"
-            placeholder="kabir@company.com"
-          />
-        </div>
-
-        <div>
-          <label className="block text-xs font-bold text-neutral-700 uppercase tracking-wide mb-1.5">Mobile Number</label>
+          <label className="block text-xs font-bold text-neutral-700 uppercase tracking-wide mb-1.5">WhatsApp Number</label>
           <div className="flex">
             <select 
               className="bg-neutral-50 border border-r-0 border-neutral-200 rounded-l-xl px-3 py-3 text-sm text-neutral-700 focus:outline-none font-medium"
