@@ -118,7 +118,7 @@ export default function DashboardPreviewPage() {
           <nav className="space-y-1">
             {[
               { id: "overview", label: "Overview", icon: LayoutDashboard },
-              { id: "vendors", label: "Vendor Accounts", icon: Users },
+              { id: "vendors", label: "Vendor / Supplier Bank Account", icon: Users },
               { id: "cards", label: "Linked Cards", icon: CreditCard },
               { id: "logs", label: "Security Logs", icon: ShieldAlert },
             ].map((tab) => (

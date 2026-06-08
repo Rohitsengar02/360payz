@@ -103,7 +103,7 @@ export default function SecurityPage() {
               {[
                 { title: "Risk Scoring", text: "Calculates an instant risk probability using geolocation, card type, and transaction velocity." },
                 { title: "Tokenized Vaults", desc: "No cardholder details are kept raw. We use industry-standard tokenization protocols." },
-                { title: "Penny-Drop Verification", desc: "Before completing the payment, we deposit a mock penny in the vendor account to verify ownership." }
+                { title: "Penny-Drop Verification", desc: "Before completing the payment, we deposit a mock penny in the Vendor / Supplier Bank Account to verify ownership." }
               ].map((s, i) => (
                 <div key={i} className="flex gap-4">
                   <div className="h-6 w-6 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">

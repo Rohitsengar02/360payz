@@ -40,7 +40,7 @@ export default function SuccessPage() {
           <div className="bg-white border border-neutral-200 rounded-xl p-4 shadow-sm">
             <Send className="w-5 h-5 text-primary mb-2" />
             <div className="text-sm font-bold text-neutral-900">Send Payment</div>
-            <div className="text-xs text-neutral-500 mt-1">To vendor account</div>
+            <div className="text-xs text-neutral-500 mt-1">To Vendor / Supplier Bank Account</div>
           </div>
           <div className="bg-white border border-neutral-200 rounded-xl p-4 shadow-sm">
             <CreditCard className="w-5 h-5 text-secondary mb-2" />

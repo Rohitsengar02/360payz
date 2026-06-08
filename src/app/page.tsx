@@ -119,7 +119,7 @@ export default function LandingPage() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-neutral-950 leading-tight">
               Transfer Funds <br />
               From <span className="text-primary">Credit Cards</span> <br />
-              To <span className="text-primary">Vendor Accounts</span> <br />
+              To <span className="text-primary">Vendor / Supplier Bank Account</span> <br />
               In Minutes
             </h1>
 
@@ -475,56 +475,6 @@ export default function LandingPage() {
 
 
 
-      {/* SECTION 9: WHY 360PAYZ */}
-      <section className="relative z-10 py-24 w-full px-6 md:px-12 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-5 space-y-6">
-            <span className="text-xs uppercase font-bold text-primary tracking-widest">Our Edge</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-neutral-950">Why Choose 360payZ?</h2>
-            <p className="text-sm text-neutral-500 leading-relaxed">
-              We bridge the gap between credit card limits and commercial vendor settlements, providing unmatched speed, rewards, and reliability.
-            </p>
-            <div className="space-y-3">
-              {[
-                { title: "Unbeatable Speed", desc: "No long waiting times. Settlements land in minutes." },
-                { title: "Direct Cashback", desc: "Get a reward credit back into your account." },
-                { title: "Safe & Compliant", desc: "Designed according to Reserve Bank regulations." }
-              ].map((adv, idx) => (
-                <div key={idx} className="flex gap-4">
-                  <div className="h-6 w-6 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check className="h-3.5 w-3.5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-neutral-950">{adv.title}</h4>
-                    <p className="text-xs text-neutral-500 mt-0.5">{adv.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="lg:col-span-7">
-            <div className="bg-neutral-50 border border-neutral-200 rounded-3xl p-6 relative overflow-hidden flex items-center justify-center min-h-[300px]">
-              <div className="absolute top-10 left-10 w-24 h-24 bg-primary/5 rounded-full filter blur-xl" />
-              <div className="absolute bottom-10 right-10 w-24 h-24 bg-secondary/5 rounded-full filter blur-xl" />
-              
-              <div className="grid grid-cols-2 gap-4 w-full">
-                {[
-                  { label: "99.9% Uptime", desc: "Maximum transaction stability" },
-                  { label: "Instant KYC", desc: "Ready to use in seconds" },
-                  { label: "Multi-Card Link", desc: "Add multiple cards seamlessly" },
-                  { label: "24/7 Support", desc: "Available on our official WhatsApp Handle" }
-                ].map((box, i) => (
-                  <div key={i} className="p-5 rounded-2xl bg-white border border-neutral-200 hover:border-primary transition-all text-center">
-                    <span className="text-sm font-bold text-neutral-950 block">{box.label}</span>
-                    <span className="text-[11px] text-neutral-500 mt-1 block">{box.desc}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* SECTION 10: PAYMENT FLOW VISUALIZATION */}
       <section className="relative z-10 py-20 bg-neutral-55 border-y border-neutral-200">

@@ -43,10 +43,7 @@ export default function RefundPage() {
                   <h4 className="font-bold text-neutral-900">Failed Transactions</h4>
                   <p className="mt-1">The transaction was not successfully completed.</p>
                 </div>
-                <div>
-                  <h4 className="font-bold text-neutral-900">Duplicate Payments</h4>
-                  <p className="mt-1">A payment was processed more than once due to technical issues.</p>
-                </div>
+               
                 <div>
                   <h4 className="font-bold text-neutral-900">Technical Errors</h4>
                   <p className="mt-1">System or network failures prevented successful processing.</p>
@@ -91,14 +88,8 @@ export default function RefundPage() {
               <div className="mt-4 border border-neutral-200 rounded-xl overflow-x-auto text-sm">
                 <table className="w-full text-left min-w-[400px]">
                   <tbody className="divide-y divide-neutral-200">
-                    <tr className="bg-neutral-50 hover:bg-neutral-100 transition-colors">
-                      <td className="px-4 py-3 font-semibold text-neutral-900 w-1/2">Transactions using different settlement option</td>
-                      <td className="px-4 py-3">Within 24 Hours</td>
-                    </tr>
-                    <tr className="hover:bg-neutral-50 transition-colors">
-                      <td className="px-4 py-3 font-semibold text-neutral-900">UPI Transactions</td>
-                      <td className="px-4 py-3">Within 24 Hours</td>
-                    </tr>
+                  
+
                     <tr className="hover:bg-neutral-50 transition-colors">
                       <td className="px-4 py-3 font-semibold text-neutral-900">Banking Delays</td>
                       <td className="px-4 py-3">Subject to partner bank processing timelines.</td>

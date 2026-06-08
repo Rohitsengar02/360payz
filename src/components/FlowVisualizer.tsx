@@ -25,7 +25,7 @@ export default function FlowVisualizer() {
       color: "from-red-500 to-pink-500",
     },
     {
-      title: "Vendor Account",
+      title: "Vendor / Supplier Bank Account",
       desc: "Instant beneficiary bank verification",
       icon: Landmark,
       color: "from-amber-500 to-orange-500",

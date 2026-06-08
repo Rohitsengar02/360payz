@@ -66,8 +66,8 @@ export default function Footer() {
           <ul className="space-y-2 text-xs text-white/50">
             <li><Link href="/features" className="hover:text-primary transition-colors">Features</Link></li>
             <li><Link href="/pricing" className="hover:text-primary transition-colors">Pricing</Link></li>
-            <li><Link href="/security" className="hover:text-primary transition-colors">Security Suite</Link></li>
-            <li><Link href="/#how-it-works" className="hover:text-primary transition-colors">Workflow</Link></li>
+            <li><Link href="/#how-it-works" className="hover:text-primary transition-colors">How It Works</Link></li>
+            <li><Link href="/why-choose-us" className="hover:text-primary transition-colors">Why Choose Us</Link></li>
           </ul>
         </div>
 
@@ -81,9 +81,9 @@ export default function Footer() {
         <div>
           <h5 className="text-[10px] font-bold text-white uppercase tracking-wider mb-4">Resources</h5>
           <ul className="space-y-2 text-xs text-white/50">
-            <li><Link href="/#blog" className="hover:text-primary transition-colors">Blog</Link></li>
-            <li><Link href="/features" className="hover:text-primary transition-colors">Features</Link></li>
-            <li><Link href="/#faq" className="hover:text-primary transition-colors">Help Center</Link></li>
+            {/* <li><Link href="/blog" className="hover:text-primary transition-colors">Blog</Link></li> */}
+            <li><Link href="/contact" className="hover:text-primary transition-colors">Help Center</Link></li>
+            <li><Link href="/#faq" className="hover:text-primary transition-colors">FAQ</Link></li>
           </ul>
         </div>
 
