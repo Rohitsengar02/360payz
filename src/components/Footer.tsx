@@ -45,9 +45,9 @@ export default function Footer() {
           </p>
           <div className="flex gap-4 pt-2">
             {[
-              { name: "Instagram", url: "https://www.instagram.com/360payz", icon: InstagramIcon, color: "#E1306C" },
+              { name: "Instagram", url: "https://www.instagram.com/360payz?igsh=MWNndzJ2azFlenh0eA%3D%3D&utm_source=qr", icon: InstagramIcon, color: "#E1306C" },
               { name: "LinkedIn", url: "https://www.linkedin.com/in/aman-tomar-6b843b411", icon: LinkedinIcon, color: "#0A66C2" },
-              { name: "Facebook", url: "https://www.facebook.com/share/17Zn3nAuWZ/", icon: FacebookIcon, color: "#1877F2" },
+              { name: "Facebook", url: "https://www.facebook.com/share/17Zn3nAuWZ/?mibextid=wwXIfr", icon: FacebookIcon, color: "#1877F2" },
               { name: "YouTube", url: "https://youtube.com/@360payz?si=_uoNC0upw4abbphg", icon: YoutubeIcon, color: "#FF0000" }
             ].map((s) => {
               const Icon = s.icon;
