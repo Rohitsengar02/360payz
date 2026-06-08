@@ -116,10 +116,11 @@ export default function LandingPage() {
               <span className="text-sm font-bold text-neutral-700 tracking-wide">B2B Payments</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-neutral-950 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-950 leading-tight">
               Transfer Funds <br />
               From <span className="text-primary">Credit Cards</span> <br />
-              To <span className="text-primary">Vendor / Supplier Bank Account</span> <br />
+              To <span className="text-primary">Vendor / Supplier</span> <br />
+              <span className="text-primary">Bank Account</span> <br />
               In Minutes
             </h1>
 
