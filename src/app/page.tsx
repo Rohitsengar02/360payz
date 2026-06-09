@@ -349,7 +349,7 @@ export default function LandingPage() {
         </div>
         
         {/* Infinite horizontal marquee */}
-        <div className="flex w-[200%] gap-6 animate-marquee-loop text-white text-xs font-semibold whitespace-nowrap hover:[animation-play-state:paused]">
+        <div className="flex w-[200%] gap-6 animate-marquee-loop [animation-duration:25s] lg:[animation-duration:55s] text-white text-xs font-semibold whitespace-nowrap hover:[animation-play-state:paused]">
           {[
             "SSL Protected", "PAN Verification", "Aadhaar Verification", "Fraud Detection", "24/7 Availability", "Instant Transfers",
             "SSL Protected", "PAN Verification", "Aadhaar Verification", "Fraud Detection", "24/7 Availability", "Instant Transfers",

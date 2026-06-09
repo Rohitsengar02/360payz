@@ -110,16 +110,6 @@ export default function PricingPage() {
                 ))}
               </div>
             </div>
-            
-            <div className="mt-8">
-              <Link href={t.cta === "Talk to Sales" ? "/contact" : "/get-started"} className={`w-full block text-center py-3 rounded-xl text-sm font-bold transition-all ${
-                t.popular 
-                  ? "bg-primary text-neutral-900 hover:opacity-90 shadow-lg shadow-primary/20" 
-                  : "bg-neutral-900 text-white hover:bg-neutral-800 shadow-md"
-              }`}>
-                {t.cta}
-              </Link>
-            </div>
           </div>
         ))}
       </div>

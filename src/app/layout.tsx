@@ -35,6 +35,8 @@ export const metadata: Metadata = {
   }
 };
 
+import ScrollToTop from "@/components/ScrollToTop";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable} light scroll-smooth`}>
       <body className="antialiased min-h-screen bg-background text-neutral-900 selection:bg-primary selection:text-white">
+        <ScrollToTop />
         {/* Global UI Overlays */}
         <div className="gradient-mesh" />
         <div className="noise-overlay" />
