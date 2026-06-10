@@ -399,20 +399,30 @@ export default function LandingPage() {
         <div className="w-full flex flex-col gap-6">
           {/* Row 1: Right to Left */}
           <div className="flex w-max gap-6 animate-marquee-loop whitespace-nowrap hover:[animation-play-state:paused]">
-            {[...Array(16)].map((_, idx) => (
+            {[...Array(6)].flatMap(() => [
+              "24/7 Dedicated Support",
+              "24/7 Platform Availability",
+              "Real-Time Payment Tracking",
+              "Business Payment Automation"
+            ]).map((text, idx) => (
               <div key={`row1-${idx}`} className="bg-white/5 border border-white/10 px-6 py-3 rounded-full flex items-center gap-2">
                 <Check className="h-4 w-4 text-secondary" />
-                <span className="text-sm font-semibold text-white">24/7 Dedicated Support</span>
+                <span className="text-sm font-semibold text-white">{text}</span>
               </div>
             ))}
           </div>
           
           {/* Row 2: Left to Right */}
           <div className="flex w-max gap-6 animate-marquee-loop-reverse whitespace-nowrap hover:[animation-play-state:paused]">
-            {[...Array(16)].map((_, idx) => (
+            {[...Array(6)].flatMap(() => [
+              "Real-Time Payment Tracking",
+              "Business Payment Automation",
+              "24/7 Dedicated Support",
+              "24/7 Platform Availability"
+            ]).map((text, idx) => (
               <div key={`row2-${idx}`} className="bg-white/5 border border-white/10 px-6 py-3 rounded-full flex items-center gap-2">
                 <Check className="h-4 w-4 text-secondary" />
-                <span className="text-sm font-semibold text-white">24/7 Platform Availability</span>
+                <span className="text-sm font-semibold text-white">{text}</span>
               </div>
             ))}
           </div>
