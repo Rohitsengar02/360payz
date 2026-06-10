@@ -41,7 +41,7 @@ export default function Footer() {
         <div className="col-span-2 space-y-4">
           <Logo isDark={true} className="inline-block scale-75 origin-left" />
           <p className="text-xs text-white/55 leading-relaxed max-w-xs">
-            Empowering Indian businesses and professionals to pay vendors instantly using their existing credit Card. Highly secure and built to RBI guidelines.
+            Empowering Indian businesses and professionals to pay vendors instantly using their existing credit Card. Highly secure and designed to operate in alignment with applicable RBI guidelines.
           </p>
           <div className="flex gap-4 pt-2">
             {[
@@ -103,7 +103,7 @@ export default function Footer() {
 
       <div className="w-full px-6 md:px-12 lg:px-16 pt-8 border-t border-white/5 text-center md:text-left md:flex justify-between items-center text-[10px] text-white/30 space-y-4 md:space-y-0">
         <span>&copy; {new Date().getFullYear()} 360payZ. All rights reserved.</span>
-        <span>Made for businesses and startups in India. Fully compliant with RBI guidelines.</span>
+        <span>Made for businesses and startups in India. Designed to operate in alignment with applicable RBI guidelines through licensed banking and payment partners.</span>
       </div>
     </footer>
   );

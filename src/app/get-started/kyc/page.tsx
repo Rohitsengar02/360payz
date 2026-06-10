@@ -54,7 +54,7 @@ export default function KYCPage() {
           </div>
           <div>
             <h4 className="font-bold text-neutral-900 text-base">Regulatory Compliance</h4>
-            <p className="text-sm text-neutral-500 mt-1.5">Meets strict RBI and AML guidelines for B2B transactions.</p>
+            <p className="text-sm text-neutral-500 mt-1.5">Designed to align with applicable RBI and AML guidelines for B2B transactions.</p>
           </div>
         </li>
         <li className="flex items-start gap-5">

@@ -38,7 +38,7 @@ export default function FlowVisualizer() {
     },
     {
       title: "Cashback Wallet",
-      desc: "cashback credited instantly",
+      desc: "Eligible rewards applied",
       icon: CircleDollarSign,
       color: "from-primary to-green-400",
     },

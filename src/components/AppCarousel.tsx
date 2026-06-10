@@ -26,10 +26,10 @@ interface Screen {
 }
 
 const SCREENS: Screen[] = [
-  { id: 0, title: "Dashboard", desc: "View limits, total cashbacks, recent transactions, and card settings.", icon: LayoutGrid, color: "from-purple-600 to-indigo-600" },
+  { id: 0, title: "Dashboard", desc: "View limits, transaction history, recent settlements, and card settings.", icon: LayoutGrid, color: "from-purple-600 to-indigo-600" },
   { id: 1, title: "Transfer", desc: "Select a registered vendor, enter amount, choose credit card, and send instantly.", icon: Send, color: "from-blue-600 to-cyan-600" },
   { id: 2, title: "History", desc: "Track complete past transactions, view transaction receipts, and export statements.", icon: History, color: "from-emerald-600 to-teal-600" },
-  { id: 3, title: "Wallet", desc: "Track accumulated cashback and withdraw or reuse funds.", icon: Wallet, color: "from-amber-600 to-orange-600" },
+  { id: 3, title: "Rewards", desc: "Track accumulated eligible card rewards and promotional offers.", icon: Wallet, color: "from-amber-600 to-orange-600" },
   { id: 4, title: "KYC", desc: "Complete 60-second automated Aadhaar and PAN verification.", icon: UserCheck, color: "from-red-600 to-pink-600" },
 ];
 

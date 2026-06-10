@@ -27,7 +27,7 @@ export default function PaymentSetupPage() {
       </div>
       <h3 className="text-3xl font-extrabold text-neutral-900 mb-4">Secure Payment Methods</h3>
       <p className="text-neutral-500 mb-10 leading-relaxed text-base">
-        We never store your full card details. All payment information is tokenized and stored with our RBI-licensed banking partners.
+        We never store your full card details. All payment information is tokenized and stored with our licensed banking partners.
       </p>
       
       <div className="bg-gradient-to-br from-neutral-900 to-neutral-950 rounded-2xl p-8 text-white relative overflow-hidden shadow-xl shadow-neutral-900/20">
@@ -35,7 +35,7 @@ export default function PaymentSetupPage() {
         <ShieldCheck className="w-10 h-10 text-emerald-400 mb-6" />
         <h4 className="font-bold text-xl mb-3">Enterprise-Grade Security</h4>
         <ul className="space-y-4 text-sm text-neutral-300">
-          <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-400" /> PCI DSS Level 1 Certified</li>
+          <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-400" /> Card payments processed through PCI-DSS certified partners</li>
           <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-400" /> AES-256 Encryption</li>
           <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-400" /> Real-time Fraud Prevention</li>
         </ul>

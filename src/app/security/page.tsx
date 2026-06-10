@@ -30,7 +30,7 @@ const SECURITY_PILLARS = [
   {
     icon: Key,
     title: "Card Data Hashing",
-    desc: "Card details are never saved on our servers. We use PCI-compliant tokenized vaults via certified payment processors."
+    desc: "Card details are never saved on our servers. Card payments are processed through PCI-DSS certified payment partners."
   },
   {
     icon: ClipboardCheck,
@@ -45,7 +45,7 @@ const SECURITY_PILLARS = [
   {
     icon: Shield,
     title: "RBI & Escrow Compliance",
-    desc: "Funds are routed through regulated partner bank Escrow accounts, satisfying RBI requirements for merchant settlements."
+    desc: "Funds are routed through regulated partner bank Escrow accounts, operating in alignment with applicable RBI guidelines for merchant settlements."
   }
 ];
 
@@ -66,7 +66,7 @@ export default function SecurityPage() {
         <span className="text-xs uppercase font-extrabold text-primary tracking-widest">SECURITY CENTER</span>
         <h1 className="text-4xl md:text-5xl font-extrabold text-neutral-900">Bank-Grade Payout Security</h1>
         <p className="text-sm text-neutral-500 max-w-lg mx-auto">
-          Secured by 360payZ and in compliance with RBI guidelines. We prioritize the protection of your finances and identity above all.
+          Secured by 360payZ and designed to operate in alignment with applicable RBI guidelines. We prioritize the protection of your finances and identity above all.
         </p>
       </div>
 

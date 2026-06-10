@@ -51,7 +51,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "How do I claim my cashback?",
-    answer: "Cashback is credited automatically to your 360payZ Wallet immediately after a successful transaction. You can use the balance to pay for future transfer fees or transfer it directly to your bank account once it reaches the minimum threshold of ₹100."
+    answer: "Continue enjoying eligible rewards, cashback, and benefits offered by your credit card issuer. Additional promotional cashback offers may be available from time to time, subject to applicable terms and conditions."
   }
 ];
 
@@ -153,7 +153,7 @@ export default function LandingPage() {
               {[
                 { label: "Trusted Platform", val: "★★★★★" },
                 { label: "256-bit SSL", val: "Encryption" },
-                { label: "RBI Compliance", val: "Regulated" },
+                { label: "RBI Alignment", val: "Compliant Partners" },
                 { label: "KYC Verified", val: "Instantly" }
               ].map((b, i) => (
                 <div key={i} className="text-left">
@@ -276,7 +276,7 @@ export default function LandingPage() {
                 transition={{ repeat: Infinity, duration: 7, ease: "easeInOut", delay: 0.5 }}
                 className="block absolute -left-4 top-[170px] w-[130px] sm:left-0 sm:top-[150px] sm:w-[150px] lg:left-0 lg:top-4 lg:w-[180px] bg-black/85 backdrop-blur-md border border-white/10 rounded-xl p-2.5 sm:p-3 z-30 shadow-2xl text-white"
               >
-                <span className="text-[7px] sm:text-[8px] uppercase font-bold text-secondary tracking-widest block mb-1.5">Live Activity</span>
+                <span className="text-[7px] sm:text-[8px] uppercase font-bold text-secondary tracking-widest block mb-1.5">Demo Activity Preview</span>
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={feedIndex}
@@ -453,14 +453,14 @@ export default function LandingPage() {
               { icon: Smartphone, title: "Mobile OTP Security", desc: "Dual-factor authentication secure checks for transactions." },
               { icon: UserCheck, title: "InstaKYC Engine", desc: "Automated Aadhaar/PAN validation takes under a minute." },
               { icon: Send, title: "Instant Vendor Payouts", desc: "Direct-to-bank settlements within 2-5 minutes using different settlement option." },
-              { icon: Zap, title: "Cashback Wallet", desc: "Earn cashback credited to your wallet instantly." },
+              { icon: Zap, title: "Card Rewards", desc: "Continue enjoying eligible card rewards." },
               { icon: Bell, title: "Smart Alerts", desc: "Instant WhatsApp notifications and dedicated help & support for every settlement status." },
               { icon: FileSpreadsheet, title: "Transaction Reports", desc: "Download automated statements for auditing and taxation." },
               // Duplicate set for seamless looping
               { icon: Smartphone, title: "Mobile OTP Security", desc: "Dual-factor authentication secure checks for transactions." },
               { icon: UserCheck, title: "InstaKYC Engine", desc: "Automated Aadhaar/PAN validation takes under a minute." },
               { icon: Send, title: "Instant Vendor Payouts", desc: "Direct-to-bank settlements within 2-5 minutes using different settlement option." },
-              { icon: Zap, title: "Cashback Wallet", desc: "Earn cashback credited to your wallet instantly." },
+              { icon: Zap, title: "Card Rewards", desc: "Continue enjoying eligible card rewards." },
               { icon: Bell, title: "Smart Alerts", desc: "Instant WhatsApp notifications and dedicated help & support for every settlement status." },
               { icon: FileSpreadsheet, title: "Transaction Reports", desc: "Download automated statements for auditing and taxation." }
             ].map((feat, idx) => (
@@ -591,7 +591,7 @@ export default function LandingPage() {
         <div className="w-full px-6 md:px-12 lg:px-16 space-y-6">
           <h2 className="text-3xl md:text-5xl font-extrabold text-neutral-900">Ready to Start Secure Vendor Payments?</h2>
           <p className="text-sm text-neutral-500 max-w-lg mx-auto">
-            Take advantage of interest-free credit card periods, reward cashbacks, and lightning-fast settlements today.
+            Take advantage of interest-free credit card periods, reward points, and lightning-fast settlements today.
           </p>
           <div className="flex justify-center gap-4 pt-4">
             <Link href="https://360payz.netlify.app/" target="_blank" rel="noopener noreferrer" className="bg-primary text-white font-bold text-xs px-8 py-3.5 rounded-full hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
