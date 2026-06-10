@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import GridBg from "@/components/UI/GridBg";
 import CardTilt from "@/components/UI/CardTilt";
+import ChatBotDemo from "@/components/ChatBotDemo";
 import DashboardDemo from "@/components/DashboardDemo";
 import FlowVisualizer from "@/components/FlowVisualizer";
 
@@ -34,15 +35,15 @@ const FAQ_ITEMS = [
  
   {
     question: "How long does it take for the vendor to receive the funds?",
-    answer: "Most transactions are settled instantly. For normal working hours, transfers are processed using different settlement option within 2 to 5 minutes. You and your vendor will receive real-time notifications once the payout is credited."
+    answer: "360payZ offers three settlement options, allowing you to choose how quickly the vendor receives the funds:\n\n• Instant Settlement – Funds are transferred instantly after successful payment processing.\n\n• Same-Day Settlement – Funds are credited to the vendor's account on the same day (up to 11:00 PM).\n\n• Next-Day Settlement – Funds are credited by 6:00 PM on the next business day.\n\nThe settlement speed depends on the option selected during the transaction. Both you and your vendor will receive real-time notifications once the payout is successfully processed."
   },
   {
     question: "What credit cards are supported?",
-    answer: "We support all major credit cards issued in India, including Visa, Mastercard, RuPay, and Diners Club. Some card types may also earn you reward points from your card issuer in addition to our cashback."
+    answer: "We support major credit cards issued by leading banks in India, including Visa, Mastercard, RuPay, American Express, and Diners Club cards, subject to issuing bank and payment partner eligibility.\n\nSupported card availability may vary depending on the issuing bank, transaction type, and applicable payment partner policies. Eligible cards may also continue earning reward points, cashback, or other benefits offered by the card issuer."
   },
   {
     question: "Are there any charges or fees for the transfer?",
-    answer: "We charge a nominal transaction processing fee starting from 1.2% up to 1.8% based on your transacted volume and card type. There are no hidden setup fees, annual charges, or subscription costs."
+    answer: "Our processing fee depends on the settlement option selected:\n\n• Instant Settlement: 2.6% + GST\n• Same-Day Settlement (up to 11:00 PM): 2.2% + GST\n• Next-Day Settlement (by 6:00 PM): 2.0% + GST\n\nThe applicable fee is displayed transparently before payment confirmation. There are no setup fees, annual charges, or subscription costs."
   },
   {
     question: "What is the 360payZ Fraud Detection system?",
@@ -376,7 +377,7 @@ export default function LandingPage() {
         {/* Full-width Colorful Steps Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 items-stretch w-full">
             {[
-              { step: "01", title: "Registration", desc: "Create your account using your WhatsApp number.", bg: "bg-gradient-to-br from-blue-50 to-blue-100/50 border-blue-200", iconBg: "bg-blue-100 text-blue-700", text: "text-blue-950", bgNum: "text-blue-500/10 group-hover:text-blue-500/20" },
+              { step: "01", title: "Registration", desc: "Create your account using your mobile number and email id.", bg: "bg-gradient-to-br from-blue-50 to-blue-100/50 border-blue-200", iconBg: "bg-blue-100 text-blue-700", text: "text-blue-950", bgNum: "text-blue-500/10 group-hover:text-blue-500/20" },
               { step: "02", title: "Complete KYC", desc: "Verify your identity securely using Aadhaar and PAN details.", bg: "bg-gradient-to-br from-purple-50 to-purple-100/50 border-purple-200", iconBg: "bg-purple-100 text-purple-700", text: "text-purple-950", bgNum: "text-purple-500/10 group-hover:text-purple-500/20" },
               { step: "03", title: "Add Credit Card", desc: "Link your credit card through our secure verification process.", bg: "bg-gradient-to-br from-emerald-50 to-emerald-100/50 border-emerald-200", iconBg: "bg-emerald-100 text-emerald-700", text: "text-emerald-950", bgNum: "text-emerald-500/10 group-hover:text-emerald-500/20" },
               { step: "04", title: "Vendor Payment", desc: "Transfer funds securely to vendor bank accounts and track transactions in real time.", bg: "bg-gradient-to-br from-amber-50 to-amber-100/50 border-amber-200", iconBg: "bg-amber-100 text-amber-700", text: "text-amber-950", bgNum: "text-amber-500/10 group-hover:text-amber-500/20" },
@@ -427,6 +428,13 @@ export default function LandingPage() {
             <p className="text-sm text-neutral-500 mt-2">Simulate real-time transactions and watch the 360payZ verification flow.</p>
           </div>
           <DashboardDemo />
+        </div>
+      </section>
+
+      {/* SECTION 6: AI CHATBOT */}
+      <section className="relative z-10 py-24 bg-neutral-50 border-y border-neutral-200">
+        <div className="w-full px-6 md:px-12 lg:px-16 max-w-7xl mx-auto">
+          <ChatBotDemo />
         </div>
       </section>
 

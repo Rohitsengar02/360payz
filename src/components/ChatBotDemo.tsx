@@ -81,7 +81,7 @@ export default function ChatBotDemo() {
       {/* Quick Queries Board */}
       <div className="lg:col-span-1 flex flex-col justify-center space-y-4">
         <div>
-          <span className="text-xs uppercase font-extrabold text-primary tracking-widest">Self-Service AI</span>
+          <span className="text-xs uppercase font-extrabold text-primary tracking-widest">Self-Service</span>
           <h3 className="text-2xl font-bold text-neutral-900 mt-1">Instant Support Chatbot</h3>
           <p className="text-sm text-neutral-600 mt-2 leading-relaxed">
             Ask any question to our assistant. Click one of the quick topics below to simulate a conversation.

@@ -34,7 +34,6 @@ interface Transaction {
   amount: number;
   date: string;
   status: "Success" | "Pending" | "Failed";
-  cashback: number;
 }
 
 const INITIAL_VENDORS: Vendor[] = [
@@ -45,17 +44,16 @@ const INITIAL_VENDORS: Vendor[] = [
 ];
 
 const INITIAL_TRANSACTIONS: Transaction[] = [
-  { id: "TXN1024", vendor: "Apex Distributors", amount: 45000, date: "Today, 10:14 AM", status: "Success", cashback: 450 },
-  { id: "TXN1023", vendor: "Global Logistics Pvt Ltd", amount: 120000, date: "Yesterday, 04:30 PM", status: "Success", cashback: 1200 },
-  { id: "TXN1022", vendor: "Horizon Office Supplies", amount: 15400, date: "28 May 2026", status: "Success", cashback: 154 },
-  { id: "TXN1021", vendor: "Surya Enterprise", amount: 85000, date: "24 May 2026", status: "Success", cashback: 850 },
+  { id: "TXN1024", vendor: "Apex Distributors", amount: 45000, date: "Today, 10:14 AM", status: "Success" },
+  { id: "TXN1023", vendor: "Global Logistics Pvt Ltd", amount: 120000, date: "Yesterday, 04:30 PM", status: "Success" },
+  { id: "TXN1022", vendor: "Horizon Office Supplies", amount: 15400, date: "28 May 2026", status: "Success" },
+  { id: "TXN1021", vendor: "Surya Enterprise", amount: 85000, date: "24 May 2026", status: "Success" },
 ];
 
 export default function DashboardDemo() {
   const [vendors, setVendors] = useState<Vendor[]>(INITIAL_VENDORS);
   const [transactions, setTransactions] = useState<Transaction[]>(INITIAL_TRANSACTIONS);
   const [balance, setBalance] = useState(485200);
-  const [cashbackBalance, setCashbackBalance] = useState(8450);
   const [todayTransfers, setTodayTransfers] = useState(45000);
   const [successCount, setSuccessCount] = useState(42);
   const [pendingCount, setPendingCount] = useState(0);
@@ -105,7 +103,6 @@ export default function DashboardDemo() {
     }
 
     // Done
-    const cbEarned = Math.floor(amt * 0.01); // cashback
     setTransactions(prev => [
       {
         id: "TXN" + Math.floor(1000 + Math.random() * 9000),
@@ -113,13 +110,11 @@ export default function DashboardDemo() {
         amount: amt,
         date: "Just now",
         status: "Success",
-        cashback: cbEarned
       },
       ...prev
     ]);
 
     setBalance(prev => prev - amt);
-    setCashbackBalance(prev => prev + cbEarned);
     setTodayTransfers(prev => prev + amt);
     setSuccessCount(prev => prev + 1);
     setPendingCount(prev => prev - 1);
@@ -140,8 +135,8 @@ export default function DashboardDemo() {
 
   const exportCSV = () => {
     const csvContent = "data:text/csv;charset=utf-8," 
-      + ["Transaction ID,Vendor,Amount,Date,Status,Cashback Earned"].join(",") + "\n"
-      + transactions.map(t => `${t.id},"${t.vendor}",${t.amount},"${t.date}",${t.status},${t.cashback}`).join("\n");
+      + ["Transaction ID,Vendor,Amount,Date,Status"].join(",") + "\n"
+      + transactions.map(t => `${t.id},"${t.vendor}",${t.amount},"${t.date}",${t.status}`).join("\n");
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
@@ -162,6 +157,10 @@ export default function DashboardDemo() {
           <span className="text-xs uppercase font-extrabold text-primary tracking-widest">Simulator</span>
           <h3 className="text-2xl font-bold text-neutral-900 mt-1">Interactive Payout Portal</h3>
           <p className="text-xs text-neutral-500">Experience live credit-to-vendor settlement</p>
+          <div className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-100/80 text-amber-800 text-[10px] font-bold uppercase tracking-wider border border-amber-200">
+            <Info className="w-3.5 h-3.5" />
+            Demo Dashboard Preview
+          </div>
         </div>
         <div className="flex items-center gap-2">
           <button 
@@ -186,26 +185,13 @@ export default function DashboardDemo() {
         
         {/* Left column: Quick Stats & Vendor Form */}
         <div className="lg:col-span-1 flex flex-col gap-6">
-          {/* Card: Wallet Balance */}
-          <div className="bg-neutral-50 p-5 rounded-2xl border border-neutral-200 shadow-sm">
-            <div className="flex items-center justify-between mb-3">
-              <span className="text-xs text-neutral-500 font-medium">Available Card Limit</span>
-              <Wallet className="h-4 w-4 text-primary" />
-            </div>
-            <h4 className="text-3xl font-extrabold text-neutral-900">
-              ₹{balance.toLocaleString("en-IN")}
-            </h4>
-            <div className="flex items-center justify-between mt-3 text-xs">
-              <span className="text-neutral-500">Cashback Wallet:</span>
-              <span className="text-primary font-bold flex items-center gap-1">
-                <Zap className="h-3.5 w-3.5 fill-primary/10" />
-                ₹{cashbackBalance.toLocaleString("en-IN")}
-              </span>
-            </div>
-          </div>
 
           {/* Quick Counter Row */}
-          <div className="grid grid-cols-3 gap-3 text-center">
+          <div className="relative pt-3">
+            <div className="absolute top-0 right-2 bg-neutral-200/80 text-neutral-600 text-[9px] font-bold uppercase px-2 py-0.5 rounded shadow-sm z-10 border border-neutral-300">
+              Illustration Only
+            </div>
+            <div className="grid grid-cols-3 gap-3 text-center">
             <div className="bg-neutral-50 p-3 rounded-xl border border-neutral-200 shadow-sm">
               <span className="text-[10px] text-neutral-500 block font-bold uppercase">Today's Vol</span>
               <span className="text-sm font-semibold text-neutral-900">₹{todayTransfers >= 100000 ? `${(todayTransfers/100000).toFixed(2)}L` : todayTransfers.toLocaleString("en-IN")}</span>
@@ -218,6 +204,7 @@ export default function DashboardDemo() {
               <span className="text-[10px] text-neutral-500 block font-bold uppercase">Pending</span>
               <span className="text-sm font-semibold text-amber-600">{pendingCount}</span>
             </div>
+          </div>
           </div>
 
           {/* Payout Form or Add Vendor Form */}
@@ -469,9 +456,6 @@ export default function DashboardDemo() {
                   <div className="text-right">
                     <span className="text-xs font-bold text-neutral-900 block">
                       ₹{txn.amount.toLocaleString("en-IN")}
-                    </span>
-                    <span className="text-[9px] text-primary font-bold">
-                      +₹{txn.cashback} Cashback
                     </span>
                   </div>
                 </div>

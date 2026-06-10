@@ -65,7 +65,6 @@ export default function Footer() {
           <h5 className="text-[10px] font-bold text-white uppercase tracking-wider mb-4">Product</h5>
           <ul className="space-y-2 text-xs text-white/50">
             <li><Link href="/features" className="hover:text-primary transition-colors">Features</Link></li>
-            <li><Link href="/pricing" className="hover:text-primary transition-colors">Pricing</Link></li>
             <li><Link href="/how-it-works" className="hover:text-primary transition-colors">How It Works</Link></li>
             <li><Link href="/why-choose-us" className="hover:text-primary transition-colors">Why Choose Us</Link></li>
           </ul>
@@ -75,6 +74,7 @@ export default function Footer() {
           <h5 className="text-[10px] font-bold text-white uppercase tracking-wider mb-4">Company</h5>
           <ul className="space-y-2 text-xs text-white/50">
             <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
+            <li><Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
           </ul>
         </div>
 
