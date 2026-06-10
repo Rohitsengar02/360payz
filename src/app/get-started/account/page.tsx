@@ -66,7 +66,7 @@ export default function AccountPage() {
       </div>
       <h3 className="text-3xl font-extrabold text-neutral-900 mb-4">Why Join 360payZ?</h3>
       <p className="text-neutral-500 mb-10 leading-relaxed text-base">
-        Experience the future of B2B payments. Settle vendor invoices instantly using your credit limit and earn exclusive cashbacks.
+        Experience the future of B2B payments. Settle vendor invoices instantly using your credit limit and earn eligible rewards.
       </p>
       
       <ul className="space-y-8">
@@ -94,7 +94,7 @@ export default function AccountPage() {
           </div>
           <div>
             <h4 className="font-bold text-neutral-900 text-base">Real-Time Tracking</h4>
-            <p className="text-sm text-neutral-500 mt-1.5">Monitor all your transactions and cashbacks on one dashboard.</p>
+            <p className="text-sm text-neutral-500 mt-1.5">Monitor all your transactions and rewards on one dashboard.</p>
           </div>
         </li>
         <li className="flex items-start gap-5">
@@ -253,7 +253,7 @@ export default function AccountPage() {
                 <Check className="w-3.5 h-3.5 text-white opacity-0 transition-opacity" strokeWidth={3} />
               </div>
             </div>
-            <span className="text-xs text-neutral-600 mt-0.5">Receive marketing updates and cashback offers.</span>
+            <span className="text-xs text-neutral-600 mt-0.5">Receive marketing updates and reward offers.</span>
           </label>
         </div>
 

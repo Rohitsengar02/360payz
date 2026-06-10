@@ -172,7 +172,7 @@ export default function AppCarousel() {
 
                     <div className="bg-white/[0.02] border border-white/5 p-3 rounded-xl flex items-center justify-between">
                       <div>
-                        <span className="text-[8px] text-white/40 block font-bold uppercase">Cashback Earned</span>
+                        <span className="text-[8px] text-white/40 block font-bold uppercase">Rewards Earned</span>
                         <span className="text-xs font-bold text-primary">₹8,450</span>
                       </div>
                       <div className="bg-primary/10 p-1.5 rounded-lg text-primary">
@@ -280,7 +280,7 @@ export default function AppCarousel() {
                   className="space-y-3 flex-1 flex flex-col justify-between"
                 >
                   <div className="space-y-3">
-                    <h5 className="text-xs font-bold text-white">Cashback Wallet</h5>
+                    <h5 className="text-xs font-bold text-white">Rewards Dashboard</h5>
                     <div className="p-4 rounded-2xl bg-gradient-to-br from-primary/10 via-black to-secondary/10 border border-white/10 text-center">
                       <span className="text-[9px] text-white/50 block uppercase">Balance Available</span>
                       <span className="text-2xl font-extrabold text-primary mt-1 block">₹8,450</span>

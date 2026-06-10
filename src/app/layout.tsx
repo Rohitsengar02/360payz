@@ -18,11 +18,11 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: "360payZ - Premium Credit Card to Vendor Payment Platform",
-  description: "Transfer funds from credit cards to vendor bank accounts in minutes. Secure, compliant, and available 24/7. Get cashback on every transaction.",
+  description: "Transfer funds from credit cards to vendor bank accounts in minutes. Secure, compliant, and available 24/7. Earn eligible rewards on transactions.",
   keywords: "fintech, credit card to bank transfer, vendor payments, rent payment by credit card, merchant payouts, India business payments, built in alignment with RBI guidelines",
   openGraph: {
     title: "360payZ - Credit Card to Vendor Payouts",
-    description: "Securely settle vendor invoices using your credit card line of credit and earn instant cashback rewards.",
+    description: "Securely settle vendor invoices using your credit card line of credit and earn eligible rewards.",
     type: "website",
     locale: "en_IN",
     url: "https://360payz.com",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "360payZ - Credit Card to Vendor Payouts",
-    description: "Settle vendor invoices using your credit card line of credit and earn cashback on every transaction.",
+    description: "Settle vendor invoices using your credit card line of credit and earn eligible rewards.",
   }
 };
 

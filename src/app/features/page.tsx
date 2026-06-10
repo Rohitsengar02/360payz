@@ -37,9 +37,9 @@ const FEATURE_LIST = [
   },
   {
     icon: Zap,
-    title: "Cashback Wallet Integration",
-    detail: "Earn cashback on vendor payments.",
-    badge: "Cashback"
+    title: "Card Rewards Integration",
+    detail: "Earn eligible rewards on vendor payments.",
+    badge: "Rewards"
   },
 
   {

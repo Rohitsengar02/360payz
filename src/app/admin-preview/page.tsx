@@ -88,7 +88,7 @@ export default function AdminPreviewPage() {
               { id: "kyc", label: "KYC Queue", icon: UserCheck },
               { id: "tickets", label: "Support Tickets", icon: MessageSquare },
               { id: "fraud", label: "Fraud Alerts", icon: ShieldAlert },
-              { id: "reports", label: "Cashback & Volume", icon: Coins }
+              { id: "reports", label: "Rewards & Volume", icon: Coins }
             ].map((tab) => (
               <button
                 key={tab.id}
@@ -126,7 +126,7 @@ export default function AdminPreviewPage() {
             { label: "Total Registered Users", value: "1,248", trend: "+12.4% weekly", icon: Users },
             { label: "Pending KYC Requests", value: kycList.filter(k => k.status === "Pending").length.toString(), trend: "Urgent", icon: UserCheck, color: "text-amber-600" },
             { label: "Fraud Alerts Flagged", value: fraudAlerts.length.toString(), trend: "Monitor", icon: ShieldAlert, color: "text-red-600" },
-            { label: "Total Cashback Disbursed", value: "₹24,85,200", trend: "+₹14.5k today", icon: Coins, color: "text-primary" }
+            { label: "Total Rewards Tracked", value: "₹24,85,200", trend: "+₹14.5k today", icon: Coins, color: "text-primary" }
           ].map((stat, idx) => (
             <div key={idx} className="bg-neutral-50 border border-neutral-200 p-5 rounded-2xl flex items-center justify-between shadow-sm">
               <div>
@@ -301,7 +301,7 @@ export default function AdminPreviewPage() {
         {activeSubTab === "reports" && (
           <div className="space-y-6">
             <div>
-              <h1 className="text-2xl font-extrabold text-neutral-900">Cashback & Volume Reports</h1>
+              <h1 className="text-2xl font-extrabold text-neutral-900">Rewards & Volume Reports</h1>
               <p className="text-xs text-neutral-500 mt-1">Overview of daily transaction volume and rewards distribution</p>
             </div>
 
@@ -323,11 +323,11 @@ export default function AdminPreviewPage() {
               </div>
 
               <div className="bg-neutral-50 border border-neutral-200 p-6 rounded-3xl space-y-4 shadow-sm">
-                <h4 className="text-sm font-bold text-neutral-900">Cashback Wallet Metrics</h4>
+                <h4 className="text-sm font-bold text-neutral-900">Card Rewards Metrics</h4>
                 <div className="space-y-2 text-xs">
                   <div className="flex justify-between text-neutral-600">
                     <span>Average Payout Reward:</span>
-                    <span className="text-neutral-900 font-semibold">Cashback</span>
+                    <span className="text-neutral-900 font-semibold">Rewards</span>
                   </div>
                   <div className="flex justify-between text-neutral-600">
                     <span>Total Disbursed:</span>

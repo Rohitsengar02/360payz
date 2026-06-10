@@ -182,7 +182,7 @@ export default function LandingPage() {
                       <span>9:41 AM</span>
                     </div>
                     <div className="bg-white/5 border border-white/10 rounded-xl p-3">
-                      <span className="text-[9px] text-white/50 block">Cashback Earned</span>
+                      <span className="text-[9px] text-white/50 block">Rewards Earned</span>
                       <span className="text-lg font-extrabold text-secondary flex items-center gap-0.5">
                         <Zap className="h-3.5 w-3.5 fill-secondary/20" />
                         ₹8,450.00
@@ -554,7 +554,7 @@ export default function LandingPage() {
 
               {/* Feature Pills */}
               <div className="flex flex-wrap gap-2">
-                {["Instant Payouts", "Biometric Login", "Cashback", "24/7 Support"].map((f) => (
+                {["Instant Payouts", "Biometric Login", "Rewards", "24/7 Support"].map((f) => (
                   <span key={f} className="text-[10px] font-semibold px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-primary/80">
                     ✓ {f}
                   </span>

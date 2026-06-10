@@ -45,7 +45,7 @@ export default function WhyChooseUsPage() {
             {
               icon: "🎁",
               title: "Earn Credit Card Rewards",
-              desc: "Continue earning reward points, cashback, and other card benefits on eligible transactions."
+              desc: "Continue earning eligible rewards, points, and other card benefits on valid transactions."
             },
             {
               icon: "🔒",

@@ -37,7 +37,7 @@ export default function FlowVisualizer() {
       color: "from-green-500 to-teal-500",
     },
     {
-      title: "Cashback Wallet",
+      title: "Card Rewards",
       desc: "Eligible rewards applied",
       icon: CircleDollarSign,
       color: "from-primary to-green-400",

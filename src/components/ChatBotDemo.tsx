@@ -14,7 +14,7 @@ interface ChatMessage {
 const PRESETS = [
   { label: "Check Payout Status", text: "How do I check the status of my vendor transfer?" },
   { label: "KYC Guidelines", text: "What documents do I need for Aadhaar and PAN verification?" },
-  { label: "Cashback Reward rate", text: "How does the cashback work?" },
+  { label: "Card Rewards", text: "How do card rewards work?" },
   { label: "Support Limit", text: "What is the maximum limit per card transaction?" },
   { label: "Talk to Human", text: "I need to speak with a customer care representative." },
 ];
@@ -22,7 +22,7 @@ const PRESETS = [
 const BOT_RESPONSES: Record<string, string> = {
   "How do I check the status of my vendor transfer?": "You can view all transaction statuses on your Dashboard under 'Recent Transfers'. A green checkmark indicates a successful payout, which typically reaches the vendor's bank account within 2-5 minutes using different settlement option.",
   "What documents do I need for Aadhaar and PAN verification?": "You need your Aadhaar Number (linked to your mobile for OTP verification) and a PAN card. Verification is fully automated and takes less than 60 seconds to complete in our app.",
-  "How does the cashback work?": "For every vendor payout completed using your connected credit card, we credit a cashback directly into your 360payZ Cashback Wallet instantly. This can be used for future payments or withdrawn.",
+  "How do card rewards work?": "Continue enjoying eligible rewards, cashback, and benefits offered by your credit card issuer. Additional promotional offers may be available subject to applicable terms.",
   "What is the maximum limit per card transaction?": "The initial transaction limit is up to ₹2,00,000 per day for verified users. This limit can be enhanced by submitting tax returns or business registrations in the settings panel.",
   "I need to speak with a customer care representative.": "Connecting you to a Live Agent... A support specialist will chat with you shortly. You can also reach us via phone at 1800-360-PAYZ.",
 };

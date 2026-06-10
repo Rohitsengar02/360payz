@@ -73,7 +73,7 @@ export default function DashboardPreviewPage() {
   const [notifications, setNotifications] = useState([
     { id: 1, text: "Payout of ₹45,000 to Apex Distributors completed successfully.", type: "success", time: "10 mins ago" },
     { id: 2, text: "Security alert: Login detected from new IP 192.168.1.45.", type: "warning", time: "2 hours ago" },
-    { id: 3, text: "Cashback reward of ₹850 credited to your wallet.", type: "info", time: "1 day ago" }
+    { id: 3, text: "Eligible rewards applied to your card statement.", type: "info", time: "1 day ago" }
   ]);
 
   const toggleCard = (id: string) => {
@@ -172,7 +172,7 @@ export default function DashboardPreviewPage() {
               {[
                 { label: "Total Limit Available", value: "₹4,85,200", trend: "+2.4%", desc: "Linked credit lines" },
                 { label: "Today's Settlements", value: "₹45,000", trend: "0.0%", desc: "Pending clearances: 0" },
-                { label: "Total Cashbacks Earned", value: "₹8,450", trend: "+12.1%", desc: "Direct wallet balance", color: "text-primary" },
+                { label: "Total Card Rewards", value: "₹8,450", trend: "+12.1%", desc: "Direct wallet balance", color: "text-primary" },
                 { label: "Active Vendors", value: "4 registered", trend: "100%", desc: "Fully verified" }
               ].map((c, i) => (
                 <div key={i} className="bg-neutral-50 border border-neutral-200 p-5 rounded-2xl shadow-sm">
