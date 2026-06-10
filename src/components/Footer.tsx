@@ -101,9 +101,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full px-6 md:px-12 lg:px-16 pt-8 border-t border-white/5 text-center md:text-left md:flex justify-between items-center text-[10px] text-white/30 space-y-4 md:space-y-0">
+      <div className="w-full px-6 md:px-12 lg:px-16 pt-8 border-t border-white/5 text-center md:text-left md:flex justify-between items-start md:items-center text-[10px] text-white/30 space-y-4 md:space-y-0">
         <span>&copy; {new Date().getFullYear()} 360payZ. All rights reserved.</span>
-        <span>Made for businesses and startups in India. Designed to operate in alignment with applicable RBI guidelines through licensed banking and payment partners.</span>
+        <span className="block max-w-sm md:max-w-xl md:text-right md:pr-16 mx-auto md:mx-0 leading-relaxed">Made for businesses and startups in India. Designed to operate in alignment with applicable RBI guidelines through licensed banking and payment partners.</span>
       </div>
     </footer>
   );
