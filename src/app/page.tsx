@@ -105,14 +105,17 @@ export default function LandingPage() {
       </div>
 
       {/* SECTION 3: HERO SECTION */}
-      <section className="relative z-10 w-full px-6 md:px-12 lg:px-16 pt-12 pb-24 md:pt-20 lg:pt-28">
+      <section className="relative z-10 w-full px-6 md:px-12 lg:px-16 pt-8 pb-24 md:pt-12 lg:pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column */}
-          <div className="lg:col-span-6 space-y-8">
+          <div className="lg:col-span-6 space-y-6 md:space-y-8">
 
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-neutral-100 border border-neutral-200 shadow-sm">
-              <span className="flex h-2.5 w-2.5 rounded-full bg-primary animate-ping" />
-              <span className="text-sm font-bold text-neutral-700 tracking-wide">B2B Payments</span>
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 shadow-sm">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+              </span>
+              <span className="text-sm font-bold text-primary tracking-wide">B2B Payments</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-950 leading-tight">
