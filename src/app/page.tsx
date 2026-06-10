@@ -109,9 +109,7 @@ export default function LandingPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column */}
           <div className="lg:col-span-6 space-y-8">
-            <div className="mb-2">
-              <Logo withSlogan={true} className="scale-[0.85] sm:scale-100 origin-left" />
-            </div>
+
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-neutral-100 border border-neutral-200 shadow-sm">
               <span className="flex h-2.5 w-2.5 rounded-full bg-primary animate-ping" />
               <span className="text-sm font-bold text-neutral-700 tracking-wide">B2B Payments</span>

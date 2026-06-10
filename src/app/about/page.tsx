@@ -116,11 +116,11 @@ export default function AboutPage() {
               <div className="w-20 h-20 bg-neutral-100 rounded-full mx-auto mb-4 border border-neutral-200 flex items-center justify-center text-neutral-400">
                 <Users className="w-8 h-8" />
               </div>
-              <h3 className="font-bold text-lg text-neutral-900">Arvit Singh</h3>
+              <h3 className="font-bold text-lg text-neutral-900">Archit singh</h3>
               <p className="text-xs font-semibold text-primary mb-1">Co-Founder</p>
               <p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">IIT Dhanbad (B.Tech, M.Tech)</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
-                Arvit specializes in engineering systems, operational excellence, and product development. He plays a key role in building reliable and efficient payment experiences for businesses.
+                Archit specializes in engineering systems, operational excellence, and product development. He plays a key role in building reliable and efficient payment experiences for businesses.
               </p>
             </div>
           </div>
