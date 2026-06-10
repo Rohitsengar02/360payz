@@ -77,7 +77,7 @@ export default function RefundPage() {
                 <div className="relative">
                   <div className="absolute -left-[35px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-white"></div>
                   <span className="font-bold text-neutral-900 block">Step 4 – Completion</span>
-                  <p className="mt-1">The refunded amount is credited back to the user&apos;s account.</p>
+                  <p className="mt-1">Any refund, reversal, or transaction adjustment will be automatically processed back to the customer&apos;s original payment method used during the transaction.</p>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function RefundPage() {
 
                     <tr className="hover:bg-neutral-50 transition-colors">
                       <td className="px-4 py-3 font-semibold text-neutral-900">Banking Delays</td>
-                      <td className="px-4 py-3">Subject to partner bank processing timelines.</td>
+                      <td className="px-4 py-3">Credit Card Refunds: Typically reflected within 6–11 business days, depending on the issuing bank, card network, and applicable banking holidays.</td>
                     </tr>
                   </tbody>
                 </table>
