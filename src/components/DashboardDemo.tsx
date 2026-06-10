@@ -186,7 +186,7 @@ export default function DashboardDemo() {
         {/* Left column: Quick Stats & Vendor Form */}
         <div className="lg:col-span-1 flex flex-col gap-6">
 
-         
+          <div className="relative pt-3">
             <div className="grid grid-cols-3 gap-3 text-center">
             <div className="bg-neutral-50 p-3 rounded-xl border border-neutral-200 shadow-sm">
               <span className="text-[10px] text-neutral-500 block font-bold uppercase">Sample Volume</span>
