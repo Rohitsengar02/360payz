@@ -293,7 +293,7 @@ export default function AppCarousel() {
                       <span className="text-primary font-bold">ACTIVE</span>
                     </div>
                     <button className="w-full bg-white/5 text-white hover:bg-white/10 border border-white/10 text-[11px] font-bold py-2.5 rounded-xl transition-all">
-                      Withdraw to Bank Account
+                      Cashback account
                     </button>
                   </div>
                 </motion.div>
