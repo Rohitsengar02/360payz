@@ -68,9 +68,9 @@ export default function LandingPage() {
   
   // Live Feed Data
   const LIVE_FEEDS = [
-    { name: "Aman S. paid Om Logi.", amount: "₹45,000", time: "Just now", status: "Verified" },
-    { name: "Karan P. paid R.K. Steel", amount: "₹1,25,000", time: "1m ago", status: "Secured" },
-    { name: "Priya M. paid TechCorp", amount: "₹85,000", time: "3m ago", status: "Verified" },
+    { name: "Sample Transaction", amount: "Illustration Only", time: "Demo", status: "Verified" },
+    { name: "Sample Transaction", amount: "Illustration Only", time: "Demo", status: "Secured" },
+    { name: "Sample Transaction", amount: "Illustration Only", time: "Demo", status: "Verified" },
   ];
 
   useEffect(() => {
@@ -265,8 +265,8 @@ export default function LandingPage() {
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
                 </div>
                 <div>
-                  <span className="text-[8px] sm:text-[10px] text-white/40 block leading-none">Payout Settled</span>
-                  <span className="text-[10px] sm:text-xs font-bold text-white">₹1,25,000</span>
+                  <span className="text-[8px] sm:text-[10px] text-white/40 block leading-none">Sample Transaction</span>
+                  <span className="text-[10px] sm:text-xs font-bold text-white">Illustration Only</span>
                 </div>
               </motion.div>
 

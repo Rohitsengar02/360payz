@@ -29,7 +29,7 @@ export default function Logo({ className = "", withSlogan = false, sloganClassNa
         {/* Text Logo: 360PayZ */}
         <div className="flex items-center font-black italic tracking-tighter text-3xl sm:text-4xl drop-shadow-sm">
           <span className="text-primary">360</span>
-          <span className={isDark ? "text-white" : "text-neutral-900"}>Pay</span>
+          <span className={isDark ? "text-white" : "text-neutral-900"}>pay</span>
           <span className="text-primary">Z</span>
         </div>
       </div>

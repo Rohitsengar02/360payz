@@ -186,22 +186,21 @@ export default function DashboardDemo() {
         {/* Left column: Quick Stats & Vendor Form */}
         <div className="lg:col-span-1 flex flex-col gap-6">
 
-          {/* Quick Counter Row */}
           <div className="relative pt-3">
             <div className="absolute top-0 right-2 bg-neutral-200/80 text-neutral-600 text-[9px] font-bold uppercase px-2 py-0.5 rounded shadow-sm z-10 border border-neutral-300">
-              Illustration Only
+              Sample Dashboard Data
             </div>
             <div className="grid grid-cols-3 gap-3 text-center">
             <div className="bg-neutral-50 p-3 rounded-xl border border-neutral-200 shadow-sm">
-              <span className="text-[10px] text-neutral-500 block font-bold uppercase">Today's Vol</span>
+              <span className="text-[10px] text-neutral-500 block font-bold uppercase">Sample Volume</span>
               <span className="text-sm font-semibold text-neutral-900">₹{todayTransfers >= 100000 ? `${(todayTransfers/100000).toFixed(2)}L` : todayTransfers.toLocaleString("en-IN")}</span>
             </div>
             <div className="bg-neutral-50 p-3 rounded-xl border border-neutral-200 shadow-sm">
-              <span className="text-[10px] text-neutral-500 block font-bold uppercase">Successful</span>
+              <span className="text-[10px] text-neutral-500 block font-bold uppercase">Sample Success</span>
               <span className="text-sm font-semibold text-emerald-600">{successCount}</span>
             </div>
             <div className="bg-neutral-50 p-3 rounded-xl border border-neutral-200 shadow-sm">
-              <span className="text-[10px] text-neutral-500 block font-bold uppercase">Pending</span>
+              <span className="text-[10px] text-neutral-500 block font-bold uppercase">Sample Pending</span>
               <span className="text-sm font-semibold text-amber-600">{pendingCount}</span>
             </div>
           </div>
