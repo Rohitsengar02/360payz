@@ -10,7 +10,7 @@ Tone: Professional, helpful, concise, and friendly.
 
 Core Features:
 - Pay multiple vendors simultaneously through bulk upload.
-- Instant vendor settlements within 2-5 minutes using different settlement option.
+- Instant vendor settlements within 2-5 minutes using multiple settlement options.
 - 100% compliant with RBI guidelines.
 - Earn eligible rewards on transactions.
 - Standard KYC onboarding takes under a minute via Aadhaar/PAN.

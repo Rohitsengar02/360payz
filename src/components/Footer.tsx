@@ -41,7 +41,7 @@ export default function Footer() {
         <div className="col-span-2 space-y-4">
           <Logo isDark={true} className="inline-block scale-75 origin-left" />
           <p className="text-xs text-white/55 leading-relaxed max-w-xs">
-            Empowering Indian businesses and professionals to pay vendors instantly using their existing credit Card. Highly secure and designed to operate in alignment with applicable RBI guidelines.
+            Empowering Indian businesses and professionals to pay vendors instantly using their existing credit card. Highly secure and designed to operate in alignment with applicable RBI guidelines.
           </p>
           <div className="flex gap-4 pt-2">
             {[

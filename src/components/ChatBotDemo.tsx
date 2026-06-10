@@ -20,7 +20,7 @@ const PRESETS = [
 ];
 
 const BOT_RESPONSES: Record<string, string> = {
-  "How do I check the status of my vendor transfer?": "You can view all transaction statuses on your Dashboard under 'Recent Transfers'. A green checkmark indicates a successful payout, which typically reaches the vendor's bank account within 2-5 minutes using different settlement option.",
+  "How do I check the status of my vendor transfer?": "You can view all transaction statuses on your Dashboard under 'Recent Transfers'. A green checkmark indicates a successful payout, which typically reaches the vendor's bank account within 2-5 minutes using multiple settlement options.",
   "What documents do I need for Aadhaar and PAN verification?": "You need your Aadhaar Number (linked to your mobile for OTP verification) and a PAN card. Verification is fully automated and takes less than 60 seconds to complete in our app.",
   "How do card rewards work?": "Continue enjoying eligible rewards, cashback, and benefits offered by your credit card issuer. Additional promotional offers may be available subject to applicable terms.",
   "What is the maximum limit per card transaction?": "The initial transaction limit is up to ₹2,00,000 per day for verified users. This limit can be enhanced by submitting tax returns or business registrations in the settings panel.",

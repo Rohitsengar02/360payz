@@ -32,7 +32,7 @@ export default function FlowVisualizer() {
     },
     {
       title: "Bank Settlement",
-      desc: "Funds settled using different settlement option.",
+      desc: "Funds settled using multiple settlement options.",
       icon: CheckSquare,
       color: "from-green-500 to-teal-500",
     },

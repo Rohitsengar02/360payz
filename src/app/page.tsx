@@ -450,16 +450,16 @@ export default function LandingPage() {
         <div className="overflow-hidden relative w-full pb-6">
           <div className="flex w-max gap-4 animate-marquee-loop hover:[animation-play-state:paused] px-2">
             {[
-              { icon: Smartphone, title: "Mobile OTP Security", desc: "Dual-factor authentication secure checks for transactions." },
+              { icon: Smartphone, title: "Mobile OTP Security", desc: "Two-factor authentication protects every transaction." },
               { icon: UserCheck, title: "InstaKYC Engine", desc: "Automated Aadhaar/PAN validation takes under a minute." },
-              { icon: Send, title: "Instant Vendor Payouts", desc: "Direct-to-bank settlements within 2-5 minutes using different settlement option." },
+              { icon: Send, title: "Instant Vendor Payouts", desc: "Direct-to-bank settlements within 2-5 minutes using multiple settlement options." },
               { icon: Zap, title: "Card Rewards", desc: "Continue enjoying eligible card rewards." },
               { icon: Bell, title: "Smart Alerts", desc: "Instant WhatsApp notifications and dedicated help & support for every settlement status." },
               { icon: FileSpreadsheet, title: "Transaction Reports", desc: "Download automated statements for auditing and taxation." },
               // Duplicate set for seamless looping
-              { icon: Smartphone, title: "Mobile OTP Security", desc: "Dual-factor authentication secure checks for transactions." },
+              { icon: Smartphone, title: "Mobile OTP Security", desc: "Two-factor authentication protects every transaction." },
               { icon: UserCheck, title: "InstaKYC Engine", desc: "Automated Aadhaar/PAN validation takes under a minute." },
-              { icon: Send, title: "Instant Vendor Payouts", desc: "Direct-to-bank settlements within 2-5 minutes using different settlement option." },
+              { icon: Send, title: "Instant Vendor Payouts", desc: "Direct-to-bank settlements within 2-5 minutes using multiple settlement options." },
               { icon: Zap, title: "Card Rewards", desc: "Continue enjoying eligible card rewards." },
               { icon: Bell, title: "Smart Alerts", desc: "Instant WhatsApp notifications and dedicated help & support for every settlement status." },
               { icon: FileSpreadsheet, title: "Transaction Reports", desc: "Download automated statements for auditing and taxation." }
