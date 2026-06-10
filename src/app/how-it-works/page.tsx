@@ -40,9 +40,6 @@ export default function HowItWorksPage() {
             ].map((s, idx) => (
               <div key={idx} className={`${s.bg} border p-6 lg:p-8 rounded-2xl relative overflow-hidden group hover:-translate-y-1 transition-all shadow-sm flex flex-col justify-center h-full min-h-[200px]`}>
                 <span className={`absolute top-4 right-4 text-4xl lg:text-5xl font-black transition-colors ${s.bgNum}`}>{s.step}</span>
-                <div className={`h-10 w-10 lg:h-12 lg:w-12 rounded-full ${s.iconBg} flex items-center justify-center font-bold text-sm lg:text-base mb-4 lg:mb-6`}>
-                  {s.step}
-                </div>
                 <h4 className={`text-sm lg:text-base font-bold mb-2 ${s.text}`}>{s.title}</h4>
                 <p className="text-xs lg:text-sm text-neutral-600 leading-relaxed">{s.desc}</p>
               </div>
