@@ -17,13 +17,16 @@ export default function Logo({ className = "", withSlogan = false, sloganClassNa
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >
       <div className="flex items-center space-x-2 group cursor-pointer">
-        {/* Custom Image Logo Representation */}
-        <div className="relative flex items-center justify-center transition-transform group-hover:scale-105 drop-shadow-sm h-8 sm:h-10">
-          <img 
-            src="/logo.png" 
-            alt="360payZ Logo" 
-            className="h-full w-auto object-contain" 
-          />
+        {/* Custom SVG Wallet Icon Representation */}
+        <div className="relative flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 transition-transform group-hover:scale-105 drop-shadow-sm">
+          <img src="/logo.png" alt="360payZ Icon" className="w-full h-full object-contain" />
+        </div>
+        
+        {/* Text Logo: 360PayZ */}
+        <div className="flex items-center font-black italic tracking-tighter text-3xl sm:text-4xl drop-shadow-sm">
+          <span className="text-primary">360</span>
+          <span className={isDark ? "text-white" : "text-neutral-900"}>pay</span>
+          <span className="text-primary">Z</span>
         </div>
       </div>
       
