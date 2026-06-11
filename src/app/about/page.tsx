@@ -95,8 +95,8 @@ export default function AboutPage() {
                 <Users className="w-8 h-8" />
               </div>
               <h3 className="font-bold text-lg text-neutral-900">Aman Tomar</h3>
-              <p className="text-xs font-semibold text-primary mb-1">Co-Founder & AI/ML Engineer</p>
-              <p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">&nbsp;</p>
+<p className="text-xs font-semibold text-primary mb-1">Founder, CEO & AI/ML Engineer</p>
+<p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">&nbsp;</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
                 Aman leads the artificial intelligence and automation initiatives at 360payZ. His work focuses on enhancing platform intelligence, operational efficiency, and user experience through advanced technology solutions.
               </p>
@@ -106,7 +106,7 @@ export default function AboutPage() {
                 <Users className="w-8 h-8" />
               </div>
               <h3 className="font-bold text-lg text-neutral-900">Akash Singh</h3>
-              <p className="text-xs font-semibold text-primary mb-1">Co-Founder</p>
+              <p className="text-xs font-semibold text-primary mb-1">Co-founder & CTO</p>
               <p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">IIT BHU (B.Tech, M.Tech, PhD)</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
                 Akash brings extensive expertise in technology, research, and scalable platform architecture. His focus on innovation and long-term strategy helps drive the vision behind 360payZ.
@@ -117,7 +117,7 @@ export default function AboutPage() {
                 <Users className="w-8 h-8" />
               </div>
               <h3 className="font-bold text-lg text-neutral-900">Archit singh</h3>
-              <p className="text-xs font-semibold text-primary mb-1">Co-Founder</p>
+              <p className="text-xs font-semibold text-primary mb-1">Co-founder & COO</p>
               <p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">IIT Dhanbad (B.Tech, M.Tech)</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
                 Archit specializes in engineering systems, operational excellence, and product development. He plays a key role in building reliable and efficient payment experiences for businesses.
