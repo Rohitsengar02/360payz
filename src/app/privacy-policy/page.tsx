@@ -272,7 +272,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-lg font-bold text-neutral-900 border-b border-neutral-200 pb-2">13. Contact Us</h2>
               <p>For privacy-related questions, requests, or grievances, please contact:</p>
               <p className="font-bold text-neutral-900">360payZ Payment Solution Private Limited</p>
-              <p>WhatsApp: <a href="https://wa.me/919876543210" className="text-primary hover:underline">+91 98765 43210</a></p>
+              <p>WhatsApp: <a href="https://wa.me/919711191129" className="text-primary hover:underline">+91 9711191129</a></p>
               <p>Email: <a href="mailto:support@360payz.com" className="text-primary hover:underline">support@360payz.com</a></p>
               <p>Website: <a href="http://www.360payz.com" className="text-primary hover:underline">www.360payz.com</a></p>
             </div>

@@ -13,9 +13,9 @@ const STEPS = [
     title: "Registration",
     bullets: [
       "Open the 360payZ app or website.",
-      "Enter your mobile number.",
-      "Receive a verification OTP on your registered WhatsApp number.",
-      "Enter the OTP and verify your mobile number.",
+      "Enter your mobile number and email ID.",
+      "Receive a verification OTP.",
+      "Enter the OTP received on your mobile number and email ID.",
       "Your account registration is successfully completed."
     ],
     bg: "bg-gradient-to-br from-blue-50 to-blue-100/50 border-blue-200",

@@ -42,7 +42,7 @@ export default function WhatsAppWidget() {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/message/AYUPW73YTGVPI1"
+        href="https://wa.me/919711191129"
         target="_blank"
         rel="noopener noreferrer"
         className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full shadow-2xl border border-neutral-100 flex items-center justify-center hover:scale-110 transition-transform duration-300 relative group"

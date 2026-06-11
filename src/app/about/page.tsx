@@ -95,8 +95,9 @@ export default function AboutPage() {
                 <Users className="w-8 h-8" />
               </div>
              <h3 className="font-bold text-lg text-neutral-900">Aman Tomar</h3>
-<p className="text-xs font-semibold text-primary mb-1">
-  Founder, CEO, Data Scientist & AI/ML Engineer
+<p className="text-xs mb-1">
+  <span className="font-semibold text-primary block">Founder, CEO</span>
+  <span className="font-semibold text-neutral-900 block">Data Scientist & AI/ML Engineer</span>
 </p>
 <p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">&nbsp;</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
@@ -108,8 +109,11 @@ export default function AboutPage() {
                 <Users className="w-8 h-8" />
               </div>
               <h3 className="font-bold text-lg text-neutral-900">Akash Singh</h3>
-              <p className="text-xs font-semibold text-primary mb-1">Co-founder & CTO</p>
-              <p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">IIT BHU (B.Tech, M.Tech, PhD)</p>
+              <p className="text-xs mb-1">
+                <span className="font-semibold text-primary block">Co-founder & CTO</span>
+                <span className="font-semibold text-neutral-900 block">IIT BHU | B.Tech, M.Tech & Ph.D.</span>
+              </p>
+              <p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">&nbsp;</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
                 Akash brings extensive expertise in technology, research, and scalable platform architecture. His focus on innovation and long-term strategy helps drive the vision behind 360payZ.
               </p>
@@ -118,9 +122,12 @@ export default function AboutPage() {
               <div className="w-20 h-20 bg-neutral-100 rounded-full mx-auto mb-4 border border-neutral-200 flex items-center justify-center text-neutral-400">
                 <Users className="w-8 h-8" />
               </div>
-              <h3 className="font-bold text-lg text-neutral-900">Archit singh</h3>
-              <p className="text-xs font-semibold text-primary mb-1">Co-founder & COO</p>
-              <p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">IIT Dhanbad (B.Tech, M.Tech)</p>
+              <h3 className="font-bold text-lg text-neutral-900">Archit Singh</h3>
+              <p className="text-xs mb-1">
+                <span className="font-semibold text-primary block">Co-founder & COO</span>
+                <span className="font-semibold text-neutral-900 block">IIT Dhanbad | B.Tech & M.Tech</span>
+              </p>
+              <p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">&nbsp;</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
                 Archit specializes in engineering systems, operational excellence, and product development. He plays a key role in building reliable and efficient payment experiences for businesses.
               </p>

@@ -102,7 +102,10 @@ export default function Footer() {
       </div>
 
       <div className="w-full px-6 md:px-12 lg:px-16 pt-8 border-t border-white/5 text-center md:text-left md:flex justify-between items-start md:items-center text-[10px] text-white/30 space-y-4 md:space-y-0">
-        <span>&copy; {new Date().getFullYear()} 360payZ. All rights reserved.</span>
+        <div className="flex flex-col space-y-1">
+          <span>&copy; {new Date().getFullYear()} 360payZ Payment Solutions Private Limited. All rights reserved.</span>
+          <span>Registration Number: 09AADCZ0234D1ZM | Corporate Identity Number: U62099UW2026PTC253286</span>
+        </div>
         <span className="block max-w-sm md:max-w-xl md:text-right md:pr-16 mx-auto md:mx-0 leading-relaxed">Made for businesses and startups in India. Designed to operate in alignment with applicable RBI guidelines through licensed banking and payment partners.</span>
       </div>
     </footer>

@@ -102,7 +102,7 @@ export default function VerificationPage() {
                 {state.mobileVerified && <CheckCircle2 className="w-4 h-4 text-emerald-500" />}
               </h3>
               <p className="text-xs text-neutral-500 mt-1">
-                Sent to {state.phoneCountryCode} {state.phone || "98765 43210"}
+                Sent to {state.phoneCountryCode} {state.phone || "9711191129"}
               </p>
             </div>
             {!state.mobileVerified && (

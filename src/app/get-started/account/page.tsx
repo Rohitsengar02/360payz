@@ -159,7 +159,7 @@ export default function AccountPage() {
               value={state.phone}
               onChange={e => updateState({ phone: e.target.value })}
               className="w-full bg-white border border-neutral-200 rounded-r-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm"
-              placeholder="98765 43210"
+              placeholder="9711191129"
             />
           </div>
         </div>

@@ -18,7 +18,8 @@ import {
   Check, 
   ArrowRight,
   Sparkles,
-  DollarSign
+  DollarSign,
+  ChevronRight
 } from "lucide-react";
 import GridBg from "@/components/UI/GridBg";
 import CardTilt from "@/components/UI/CardTilt";
@@ -30,6 +31,42 @@ import AppCarousel from "@/components/AppCarousel";
 import Logo from "@/components/Logo";
 import { Accordion } from "@/components/UI/Accordion";
 import Footer from "@/components/Footer";
+
+const StoreButton = ({ type }: { type: 'apple' | 'google' }) => {
+  return (
+    <div className="flex items-center group relative overflow-hidden bg-gradient-to-r from-[#2a0e5c] via-[#1a0836] to-[#2a0e5c] rounded-full border-[1.5px] border-violet-500/80 shadow-[0_0_15px_rgba(139,92,246,0.4)] hover:shadow-[0_0_25px_rgba(139,92,246,0.7)] transition-all cursor-not-allowed py-1.5 sm:py-2 px-3 sm:px-4 w-fit min-w-[150px] sm:min-w-[170px]">
+      <div className="absolute inset-0 bg-gradient-to-r from-violet-500/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      <div className="relative flex items-center justify-center shrink-0">
+        <div className="absolute inset-0 rounded-full border border-violet-400/40 scale-[1.2] opacity-60"></div>
+        <div className="absolute inset-0 rounded-full border border-violet-500/20 scale-[1.4] opacity-40"></div>
+        <div className="bg-[#421b85] rounded-full p-1.5 relative z-10 border border-violet-400/60 shadow-[0_0_8px_rgba(139,92,246,0.4)]">
+          {type === 'apple' ? (
+            <Smartphone className="w-4 h-4 text-white" strokeWidth={1.5} />
+          ) : (
+            <svg viewBox="0 0 24 24" className="w-4 h-4">
+              <path fill="#41A4F5" d="M3.7,21.9C3.3,21.6,3,21,3,20.2V3.8c0-0.8,0.3-1.4,0.7-1.7l0.1-0.1l9.6,9.6v0.3L3.8,22L3.7,21.9z"/>
+              <path fill="#FFE148" d="M17.8,15.6l-4.4-4.4l-0.2-0.2l0.2-0.2l4.4-4.4l0.1,0.1l5.2,3c1.5,0.8,1.5,2.2,0,3L17.9,15.5L17.8,15.6z"/>
+              <path fill="#F42749" d="M13.4,11.2l-9.6,9.6c0.3,0.3,0.9,0.4,1.5,0l12.5-7.2L13.4,11.2z"/>
+              <path fill="#02D563" d="M13.4,12.8L3.8,22c-0.6-0.4-1.2-0.3-1.5,0l9.6-9.6L13.4,12.8z"/>
+            </svg>
+          )}
+        </div>
+      </div>
+
+      <div className="w-[1px] h-6 bg-violet-400/20 mx-2 sm:mx-3 relative z-10 shrink-0"></div>
+
+      <div className="flex flex-col flex-1 text-left relative z-10">
+        <span className="text-[6px] sm:text-[7px] text-violet-300 uppercase tracking-widest font-semibold block mb-0.5 whitespace-nowrap">Coming soon to</span>
+        <span className="text-xs sm:text-sm font-bold text-white leading-none whitespace-nowrap">
+          {type === 'apple' ? 'App Store' : 'Google Play Store'}
+        </span>
+      </div>
+
+      <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-white/70 ml-1 relative z-10 shrink-0" />
+    </div>
+  )
+}
 
 const FAQ_ITEMS = [
  
@@ -130,25 +167,14 @@ export default function LandingPage() {
               Secure, compliant, and available 24/7. Settle vendor invoices, rent, and utility bills. Built for businesses and verified users across India.
             </p>
 
-            <div className="bg-primary/10 border-l-4 border-primary p-4 rounded-r-xl max-w-lg shadow-sm">
-              <p className="text-[10px] font-bold text-primary uppercase tracking-widest mb-1">Problem Statement</p>
-              <p className="text-base font-semibold text-neutral-900">
-                Your vendor doesn't accept Credit Cards? <br className="hidden sm:block" />
-                <span className="text-primary font-bold">We are here to help you out!</span>
+            <div className="bg-primary/10 border-l-4 border-primary p-5 sm:p-6 rounded-r-xl max-w-xl shadow-sm">
+              <p className="text-xl sm:text-2xl font-semibold text-neutral-900 leading-snug">
+                Your vendor doesn't <span className="text-[#D4AF37]">accept</span> Credit Cards? <br className="hidden sm:block" />
+                <span className="text-red-500 font-bold">We are here to help you out!</span>
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4">
-              <Link 
-                href="/get-started"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-bold bg-primary text-white hover:bg-black hover:shadow-xl transition-all duration-300"
-              >
-                Join Waitlist
-                <ArrowUpRight className="ml-1.5 h-4 w-4" />
-              </Link>
-
-            </div>
-
+          
             {/* Badges under buttons */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-neutral-200">
               {[
@@ -239,21 +265,9 @@ export default function LandingPage() {
               </motion.div>
 
               {/* Static Coming Soon Buttons */}
-              <div className="hidden lg:flex absolute -right-12 xl:-right-6 top-[220px] z-30 flex-col gap-4 items-end">
-                <div className="flex items-center gap-2 bg-neutral-950/90 backdrop-blur-md text-white px-4 py-3 rounded-xl border border-white/10 shadow-xl cursor-not-allowed w-[150px]">
-                  <Smartphone className="h-4 w-4 text-white/70 flex-shrink-0" />
-                  <div className="text-left">
-                    <span className="text-[7px] text-white/50 block uppercase tracking-wide leading-none mb-0.5">Coming soon to</span>
-                    <span className="text-[11px] font-bold block leading-none">App Store</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 bg-neutral-950/90 backdrop-blur-md text-white px-4 py-3 rounded-xl border border-white/10 shadow-xl cursor-not-allowed w-[150px]">
-                  <Smartphone className="h-4 w-4 text-white/70 flex-shrink-0" />
-                  <div className="text-left">
-                    <span className="text-[7px] text-white/50 block uppercase tracking-wide leading-none mb-0.5">Coming soon to</span>
-                    <span className="text-[11px] font-bold block leading-none">Google Play</span>
-                  </div>
-                </div>
+              <div className="hidden lg:flex absolute -left-20 xl:-left-12 top-[160px] z-30 flex-col gap-4 items-start">
+                <StoreButton type="apple" />
+                <StoreButton type="google" />
               </div>
 
               {/* Transfer Success Card */}
@@ -298,21 +312,9 @@ export default function LandingPage() {
             </div>
 
             {/* Mobile Coming Soon Buttons */}
-            <div className="flex lg:hidden flex-row gap-3 mt-12 z-30">
-              <div className="flex items-center gap-2 bg-neutral-950/90 backdrop-blur-md text-white px-4 py-3 rounded-xl border border-white/10 shadow-xl cursor-not-allowed w-[140px]">
-                <Smartphone className="h-4 w-4 text-white/70 flex-shrink-0" />
-                <div className="text-left">
-                  <span className="text-[6px] text-white/50 block uppercase tracking-wide leading-none mb-0.5">Coming soon to</span>
-                  <span className="text-[10px] font-bold block leading-none">App Store</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-2 bg-neutral-950/90 backdrop-blur-md text-white px-4 py-3 rounded-xl border border-white/10 shadow-xl cursor-not-allowed w-[140px]">
-                <Smartphone className="h-4 w-4 text-white/70 flex-shrink-0" />
-                <div className="text-left">
-                  <span className="text-[6px] text-white/50 block uppercase tracking-wide leading-none mb-0.5">Coming soon to</span>
-                  <span className="text-[10px] font-bold block leading-none">Google Play</span>
-                </div>
-              </div>
+            <div className="flex lg:hidden flex-col sm:flex-row gap-4 mt-12 z-30 w-full items-center justify-center">
+              <StoreButton type="apple" />
+              <StoreButton type="google" />
             </div>
 
           </div>
@@ -571,21 +573,9 @@ export default function LandingPage() {
               </div>
 
               {/* Coming Soon Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3">
-                <div className="flex items-center gap-3 bg-neutral-200 text-neutral-400 px-5 py-3 rounded-xl cursor-not-allowed">
-                  <Smartphone className="h-5 w-5 text-neutral-400 flex-shrink-0" />
-                  <div className="text-left">
-                    <span className="text-[8px] text-neutral-500 block uppercase tracking-wide">Coming soon to</span>
-                    <span className="text-sm font-bold block leading-none">App Store</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3 bg-neutral-200 text-neutral-400 px-5 py-3 rounded-xl cursor-not-allowed">
-                  <Smartphone className="h-5 w-5 text-neutral-400 flex-shrink-0" />
-                  <div className="text-left">
-                    <span className="text-[8px] text-neutral-500 block uppercase tracking-wide">Coming soon to</span>
-                    <span className="text-sm font-bold block leading-none">Google Play</span>
-                  </div>
-                </div>
+              <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                <StoreButton type="apple" />
+                <StoreButton type="google" />
               </div>
             </div>
 
