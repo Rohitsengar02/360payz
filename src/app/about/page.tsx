@@ -94,8 +94,10 @@ export default function AboutPage() {
               <div className="w-20 h-20 bg-neutral-100 rounded-full mx-auto mb-4 border border-neutral-200 flex items-center justify-center text-neutral-400">
                 <Users className="w-8 h-8" />
               </div>
-              <h3 className="font-bold text-lg text-neutral-900">Aman Tomar</h3>
-<p className="text-xs font-semibold text-primary mb-1">Founder, CEO & AI/ML Engineer</p>
+             <h3 className="font-bold text-lg text-neutral-900">Aman Tomar</h3>
+<p className="text-xs font-semibold text-primary mb-1">
+  Founder, CEO, Data Scientist & AI/ML Engineer
+</p>
 <p className="text-[10px] text-neutral-500 font-medium mb-4 uppercase tracking-wider">&nbsp;</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
                 Aman leads the artificial intelligence and automation initiatives at 360payZ. His work focuses on enhancing platform intelligence, operational efficiency, and user experience through advanced technology solutions.
