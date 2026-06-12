@@ -58,7 +58,7 @@ export default function Navbar() {
     >
       <div className="w-full px-6 md:px-12 lg:px-16 flex items-center justify-between">
         {/* Logo */}
-        <Logo withSlogan={true} className="shrink-0 scale-75 origin-left md:scale-90 lg:scale-100" />
+        <Logo withSlogan={true} className="shrink-0 scale-120 origin-left md:scale-120 lg:scale-120" />
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-8">

@@ -23,14 +23,7 @@ export default function Logo({ className = "", withSlogan = false, sloganClassNa
         </div>
       </div>
       
-      {/* Slogan */}
-      {withSlogan && (
-        <div className={`mt-1.5 flex items-center justify-center w-full space-x-2 sm:space-x-3 text-[10px] sm:text-xs font-semibold tracking-widest uppercase ${isDark ? "text-white/80" : "text-neutral-800"} ${sloganClassName}`}>
-          <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-primary"></div>
-          <span className="whitespace-nowrap">Pay everything with credit cards.</span>
-          <div className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-primary"></div>
-        </div>
-      )}
+     
     </Link>
   );
 }

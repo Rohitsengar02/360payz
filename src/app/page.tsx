@@ -168,9 +168,9 @@ export default function LandingPage() {
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-5 sm:p-6 rounded-r-xl max-w-xl shadow-sm">
-              <p className="text-xl sm:text-2xl font-semibold text-neutral-900 leading-snug">
-                Your vendor doesn't <span className="text-[#D4AF37]">accept</span> Credit Cards? <br className="hidden sm:block" />
-                <span className="text-red-500 font-bold">We are here to help you out!</span>
+              <p className="text-[22px] sm:text-[26px] font-semibold text-neutral-900 leading-snug">
+                Your vendor doesn't <span className="text-[#D4AF37]">accept</span> Credit Cards?
+                <span className="text-red-500 font-bold block mt-1">We are here to help you out!</span>
               </p>
             </div>
 
