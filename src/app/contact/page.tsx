@@ -51,7 +51,7 @@ export default function ContactPage() {
             {[
               { icon: Mail, title: "Customer Support", details: "support@360payz.com", desc: "For transaction queries, account assistance & onboarding", color: "text-primary" },
               { icon: Mail, title: "Business Enquiries", details: "contact@360payz.com", desc: "For partnerships, media & corporate communication", color: "text-primary" },
-              { icon: Phone, title: "Phone Support", details: "9711191129", desc: "24/7 Support Available", color: "text-emerald-800" }
+              { icon: Phone, title: "Support", details: "9711191129", desc: "24/7 WhatsApp Support Available", color: "text-emerald-800" }
             ].map((c, i) => (
               <div key={i} className="flex gap-4 p-5 rounded-2xl bg-neutral-50 border border-neutral-200 hover:border-neutral-300 transition-all shadow-sm">
                 <div className={`p-3 bg-white ${c.color} rounded-xl h-fit border border-neutral-200 shadow-sm`}>
