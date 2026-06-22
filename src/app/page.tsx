@@ -158,8 +158,8 @@ export default function LandingPage() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-950 leading-tight">
               Transfer Funds <br />
               From <span className="text-primary">Credit Cards</span> <br />
-              To <span className="text-primary">Vendor / Supplier</span> <br />
-              <span className="text-primary">Bank Account</span> <br />
+              To <span className="text-primary">Vendors & Suppliers</span> <br />
+              Through <span className="text-primary">Credit Cards, Debit Cards, etc.</span> <br />
               In Minutes
             </h1>
 

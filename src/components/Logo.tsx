@@ -17,9 +17,8 @@ export default function Logo({ className = "", withSlogan = false, sloganClassNa
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >
       <div className="flex items-center space-x-2 group cursor-pointer">
-        {/* User Provided PNG Logo */}
-        <div className="relative flex items-center justify-start w-32 sm:w-40 transition-transform group-hover:scale-105 drop-shadow-sm">
-          <img src="/logo.png" alt="360payZ Logo" className="w-full h-auto object-contain" />
+        <div className="relative flex items-center justify-start h-12 sm:h-16 transition-transform group-hover:scale-105 drop-shadow-sm">
+          <img src="/logo.png" alt="360payZ Logo" className="w-auto h-full object-contain" />
         </div>
       </div>
       
