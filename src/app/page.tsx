@@ -156,11 +156,10 @@ export default function LandingPage() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-950 leading-tight">
-              Transfer Funds <br />
-              From <span className="text-primary">Credit Cards</span> <br />
-              To <span className="text-primary">Vendors & Suppliers</span> <br />
-              Through <span className="text-primary">Credit Cards, Debit Cards, etc.</span> <br />
-              In Minutes
+              Transfer funds  let vendors accept payments seamlessly.<br />
+              From <span className="text-primary">your (credit card , Debit Crad , etc)</span> <br />
+              and <span className="text-primary">let vendors accept payments seamlessly.</span> <br />
+             
             </h1>
 
             <p className="text-base md:text-lg text-neutral-600 leading-relaxed max-w-lg">

@@ -18,7 +18,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: "360payZ - Premium Credit Card to Vendor Payment Platform",
-  description: "Transfer funds from credit cards to vendor bank accounts in minutes. Secure, compliant, and available 24/7. Earn eligible rewards on transactions.",
+  description: "Transfer funds from your credit card and let vendors accept payments seamlessly.",
   keywords: "fintech, credit card to bank transfer, vendor payments, rent payment by credit card, merchant payouts, India business payments, built in alignment with RBI guidelines",
   openGraph: {
     title: "360payZ - Credit Card to Vendor Payouts",
@@ -50,7 +50,7 @@ export default function RootLayout({
         <div className="gradient-mesh" />
         <div className="noise-overlay" />
         <GlowCursor />
-        
+
         <OnboardingProvider>
           <GlobalLayoutWrapper>
             {children}
